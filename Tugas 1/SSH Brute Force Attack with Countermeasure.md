@@ -1,4 +1,6 @@
 # A. Pendahuluan
+Uji penetrasi(penetration test) adalah cara yang dapat digunakan unruk mengindentifikasi terentanan yang ada dalam sistem atau jaringan yang sudah memiliki langkah - langkah keamanan sebagai langkah preventif. Sebuah tes penetrasi biasanya melibatkan penggunaan metode yang dilakukan oleh individu yang terpercaya yang sengaja menyerang dengan logika yang sama seperti yang digunakan oleh penyusup dari luar atau hacker.
+Tergantung pada jenis tes yang dilakukan, ini mungkin saja hanya melibatkan pemindaian sederhana sebuah alamat IP untuk mengidentifikasi mesin yang sedang beroperasi(live) atau dengan desain yang lebih tajam misalnya mengambil akases root/admin. Hasil penetration test ini atau serangan ini kemudian didokumentasikan dan disajikan sebagai laporan kepada pemilik sistem dan kerentanan diidentifikasi kemudian dapat diselesaikan
 
 # B. Dasar Teori
 
