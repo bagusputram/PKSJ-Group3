@@ -167,6 +167,8 @@ tes
 qwerty
 ```
 
+[![u25.jpg](https://s21.postimg.org/ug0j4ijl3/u25.jpg)](https://postimg.org/image/wxcabs3hf/)
+
 Setelah membuat daftar username serta password yang akan digunakan dalam melakukan brute force attack. Attacker pun harus mengetahui ip dari host yang akan di attack, selanjutnya dijalan syntax seperti dibawah ini
 
 ```
