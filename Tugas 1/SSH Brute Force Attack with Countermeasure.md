@@ -16,7 +16,7 @@ Untuk melakukan pengujian penetrasi diatas diperlukan beberapa tool. Yang utama 
 
 2. Ubuntu Server
 
-   Linux Ubuntu Server adalah system operasi turunan dari Linux Ubuntu yang di desain khusus dengan kernel yang gtelah dikustomisasi untuk bekerja sebagai system operasi server. Kernel Linux Ubuntu Server di desain khusus untuk bisa bekerja dengan lebih dari satu proses (multiprocessor) dengan dukungan NUMA pada 100Hz internal timer frequency dan menggunakan pennjadwalan deadline I/O. 
+   Linux Ubuntu Server adalah system operasi turunan dari Linux Ubuntu yang di desain khusus dengan kernel yang telah dikustomisasi untuk bekerja sebagai system operasi server. Kernel Linux Ubuntu Server di desain khusus untuk bisa bekerja dengan lebih dari satu proses (multiprocessor) dengan dukungan NUMA pada 100Hz internal timer frequency dan menggunakan pennjadwalan deadline I/O. 
 
    Linux Ubuntu Server memiliki lisensi open source dan gratis serta merupakan turunan dari distro linux debian sehingga memiliki keamanan yang cukup tinggi. Linux Ubuntu Server ini mempunyai kebutuhan minimum atau resource yang harus dipenuhi diantaranya adalah processor 300 MHz, Memory 64MB, Harddisk 500MB dan VGA 640×480. Namun untuk meningkatkan kinerja pada computer resource pada computer harus disediakan lebih tinggi.
 
@@ -26,7 +26,15 @@ Untuk melakukan pengujian penetrasi diatas diperlukan beberapa tool. Yang utama 
 
 4. SSH Server
 
-   
+   SSH merupakan singkatan dari Secure Shell yang merupakan suatu aplikasi pengganti remote login yang tak jauh berbeda dengan RSH dan rlogin, dan merupakan suatu protokol jaringan. Dengan adanya SSH ini kita dapat menukarkan data melalui saluran yang aman anatra dua perangkat jaringan. Protokol jaringan ini sering digunakan pada sistem operasi linux. Enkripsi yang digunakan oleh SSH menyediakan kerahasiaan dan integritas data melalui jaringan yang tidak aman seperti Internet.
+
+5. Brute Force Attack 
+
+   Brute force attack adalah salah satu metode password cracking dengan cara mencoba semua kemungkinan kombinasi password yang disimpan didalam file wordlist. Kelemahan dalam meretas password menggunakan metode brute force ini memakan banyak waktu dan resource tergantung oleh panjang dan kombinasi karakter password yang akan diretas. Sebuah password dapat dibongkar dengan menggunakan program yang mencoba membuka password yang sudah terenkripsi dengan menggunakan algoritma tertentu dengan mencoba semua kemungkinan. Salah satu tools yang biasa digunakan dalam password cracking adalah medusa, hydra, ataupun ncrack. Dalam percobaan, akan dilakukan teknik brute force attack menggunakan tools medusa.
+
+6. DenyHost
+ 
+   Denyhosts adalah open source dan program keamanan berbasis log pencegahan intrusi gratis untuk server SSH dikembangkan di Python bahasa oleh Phil Schwartz. Ini digunakan untuk menganalisa terhadap serangan yang secara brutal atau berusaha memasuki server menggunakan SSH.
 
 # C. Uji Penetrasi 1
 
