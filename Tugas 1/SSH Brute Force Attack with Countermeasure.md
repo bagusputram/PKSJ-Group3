@@ -50,7 +50,9 @@ http://www.ubuntu.com/download/server
 Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pada VMware.
 
 1. Create a New Virtual Machine pada VMware Workstation kemudian akan muncul window baru seperti gambar dibawah ini
-[![u1.jpg](http://s5.postimg.org/msx07s85j/image.jpg)](https://postimg.org/image/ijsa5m4w3/)
+
+ [![u1.jpg](http://s5.postimg.org/msx07s85j/image.jpg)](https://postimg.org/image/ijsa5m4w3/)
+
  Untuk tipe konfigurasinya pilih Custom, karena akan ada yang harus diubah konfigurasinya. Kemudian klik Next
 
 2. Pada window ini tidak perlu diubah konfigurasinya. Konfigurasinya kurang lebih seperti gambar dibawah ini. Klik Next untuk menuju windows selanjutnya.
@@ -65,21 +67,25 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
 4. Berikan nama untuk Virtual Machine yang akan dibuat.
 
  [![u4.jpg](https://s5.postimg.org/5w7xfd0lj/image.jpg)](https://postimg.org/image/hy3b9i9tv/)
+
  Berikan nama Virtual Machine yang akan dibuat sesuai keinginan. Jika ingin mengganti lokasi Virtual Machine yang akan diinstall bisa klik Browse kemudian pilih lokasi yang baru yang diinginkan. Klik Next untuk menuju windows selanjutnya.
 
 5. Pilih jumlah processor dan juga core yang akan digunakan untuk menjalankan Virtual Machine ini
 
  [![u5.jpg](https://s5.postimg.org/od2c66gjr/image.jpg)](https://postimg.org/image/ue013935v/)
+
  Konfigurasi processor mengikuti processor yang digunakan pada komputer masing-masing. Supaya tidak terlalu memberatkan konfigurasi yang digunakan seperti gambar di atas.
 
 6. Pilih jumlah memory yang akan digunakan
 
  [![u6.jpg](https://s5.postimg.org/4whmjnlfr/image.jpg)](https://postimg.org/image/jforl2ekj/)
+
  Konfigurasi memory disesuaikan dengan jumlah memory yang dimiliki komputer masing-masing. Komputer yang digunakan memiliki memory 8GB sehingga bila 1GB digunakan untuk menjalankan Virtual Machine tidak akan menjadi masalah.
 
 7. Pilih tipe koneksi internetnya
 
  [![u7.jpg](https://s5.postimg.org/d39mb8bif/image.jpg)](https://postimg.org/image/6ct51socj/)
+
  Konfigurasikan seperti pada gambar di atas.
 
 8. Pada window ini tidak perlu diubah konfigurasinya. Langsung klik next untuk menuju window selanjutnya
@@ -93,21 +99,25 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
 10. Membuat Virtual Disk untuk Virtual Machine yang akan diinstall
 
  [![u10.jpg](https://s5.postimg.org/n4j1yadzb/U10.jpg)](https://postimg.org/image/5r8rjfio3/)
+
  Pilih sesuai gambar di atas untuk membuat Virtual Disk yang baru. Kemudian klik next
 
 11. Pilih ukuran maksimum virtual disk yang diinginkan
 
  [![u11.jpg](https://s5.postimg.org/w0tu284lj/U11.jpg)](https://postimg.org/image/iwo9pjcjn/)
+
  Pada gambar di atas ukuran maksimum virtual disk adalah 20GB. Kemudian pilih Store virtual disk as single file untuk meningkatkan performa virtual disk yang akan dibuat.
 
 12. Pada window ini nama virtual disk yang akan dibuat sama seperti penamaan Virtual Machine yang akan dibuat
 
  [![u12.jpg](https://s5.postimg.org/mubjexzd3/U12.jpg)](https://postimg.org/image/mubjexzcz/)
+
  Nama virtual disk bisa diganti sesuai keinginan. Untuk lebih mudahnya disamakan saja dengan nama Virtual Machinenya.
 
 13. Pada window ini menampilkan seluruh konfigurasi untuk Virtual Machine yang akan dibuat.
 
  [![u13.jpg](https://s5.postimg.org/4sseh55c7/U13.jpg)](https://postimg.org/image/lgjwjn03n/)
+
  Klik next untuk memulai proses installasi Ubuntu Server
 
 14. Lakukan proses installasi Ubuntu Server seperi menginstall ubuntu server pada komputer biasa.
@@ -117,6 +127,7 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
 15. Setelah Selesai akan muncul tampilan seperti pada gambar di bawah ini
 
  [![u15.jpg](https://s5.postimg.org/my5cv74uf/U15.jpg)](https://postimg.org/image/z00qpce2r/)
+
  Klik Continue untuk menjalankan Ubuntu Server
 
 ## 2. Langkah Instalasi Kali Linux
