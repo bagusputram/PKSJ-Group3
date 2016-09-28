@@ -83,8 +83,23 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
 
  Pilih sesuai gambar di atas untuk membuat Virtual Disk yang baru. Kemudian klik next
 
-11. 
+11. Pilih ukuran maksimum virtual disk yang diinginkan
 
+ Pada gambar di atas ukuran maksimum virtual disk adalah 20GB. Kemudian pilih Store virtual disk as single file untuk meningkatkan performa virtual disk yang akan dibuat.
+ 
+12. Pada window ini nama virtual disk yang akan dibuat sama seperti penamaan Virtual Machine yang akan dibuat
+
+ Nama virtual disk bisa diganti sesuai keinginan. Untuk lebih mudahnya disamakan saja dengan nama Virtual Machinenya.
+
+13. Pada window ini menampilkan seluruh konfigurasi untuk Virtual Machine yang akan dibuat.
+
+ Klik next untuk memulai proses installasi Ubuntu Server
+ 
+14. Lakukan proses installasi Ubuntu Server seperi menginstall ubuntu server pada komputer biasa.
+
+15. Setelah Selesai akan muncul tampilan seperti pada gambar di bawah ini
+
+ Klik Continue untuk menjalankan Ubuntu Server
 
 ## 2. Langkah Instalasi Kali Linux
 
