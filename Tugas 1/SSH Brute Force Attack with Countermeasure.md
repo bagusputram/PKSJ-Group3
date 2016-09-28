@@ -397,6 +397,8 @@ iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update \
  --seconds 60 --hitcount 4 --rttl --name SSH -j DROP
 ```
 
+[![u46.jpg](https://s21.postimg.org/ly0qb18rr/u46.jpg)](https://postimg.org/image/xn4pyzzqb/)
+
 Rule diatas akan memblock host setelah melakukan percobaan yang salah sebanyak 4 kali dalam waktu 60 detik
 
 ### 3. Langkah Uji Penetrasi dengan SSH Brute Force Tools
@@ -453,7 +455,9 @@ medusa -h IP HOST -u "admin" -p "admin" -M ssh
 
 Dengan syntax diatas maka attacker melakukan attack dengan mencoba username admin serta password admin
 
-Apabilan berhasil maka medusa akan memberikan feedback berupa username dan password yang digunakan oleh server seperti gambar dibawah ini
+Namun dikarenakan telah diberikan pengaturan maka medusa tidak dapat melakuka brute force attack 
+
+[![u40.jpg](https://s21.postimg.org/uy5bv84vb/u40.jpg)](https://postimg.org/image/vawq1en4z/)
 
 #### 3.2 Hydra
 
@@ -468,6 +472,8 @@ Lalu dilakukan dengan daftar username serta password yang telah dibuat sebelumny
 ```
 hydra -L username.txt -P password.txt 192.168.137.144 ssh
 ```
+
+[![u47.jpg](https://s21.postimg.org/rnlk934br/u47.jpg)](https://postimg.org/image/49dkx5meb/)
 
 #### 3.3 Ncrack
 
