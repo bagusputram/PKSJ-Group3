@@ -11,7 +11,22 @@ Uji penetrasi yang akan dilakukan pada Ubuntu Server dan Kali Linux dimana Ubunt
 Untuk melakukan pengujian penetrasi diatas diperlukan beberapa tool. Yang utama adalah OS yang tertera diatas yaitu Ubuntu server dan juga Kali Linux. Disini OS yang kami gunakan terinstal pada sebuah virtual machine dengan main OSnya Windows. Adapun tool-tool yang digunakan pada uji penetrasi ini antara lain :
 
 1. VMWare Workstation
+   
    VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
+
+2. Ubuntu Server
+
+   Linux Ubuntu Server adalah system operasi turunan dari Linux Ubuntu yang di desain khusus dengan kernel yang gtelah dikustomisasi untuk bekerja sebagai system operasi server. Kernel Linux Ubuntu Server di desain khusus untuk bisa bekerja dengan lebih dari satu proses (multiprocessor) dengan dukungan NUMA pada 100Hz internal timer frequency dan menggunakan pennjadwalan deadline I/O. 
+
+   Linux Ubuntu Server memiliki lisensi open source dan gratis serta merupakan turunan dari distro linux debian sehingga memiliki keamanan yang cukup tinggi. Linux Ubuntu Server ini mempunyai kebutuhan minimum atau resource yang harus dipenuhi diantaranya adalah processor 300 MHz, Memory 64MB, Harddisk 500MB dan VGA 640×480. Namun untuk meningkatkan kinerja pada computer resource pada computer harus disediakan lebih tinggi.
+
+3. Kali Linux
+
+   Kali Linux adalah salah satu distribusi Linux tingkat lanjut untuk Penetration Testing dan audit keamanan. Distro ini dulunya adalah distro Backtrack, yang kemudian memutuskan mengganti nama distronya tersebut menjadi Kali Linux di versi terbarunya. Kali Linux ini akan dijadikan sebagai standarisasi distro Linux yang digunakan untuk percobaan penetrasi.
+
+4. SSH Server
+
+   
 
 # C. Uji Penetrasi 1
 
