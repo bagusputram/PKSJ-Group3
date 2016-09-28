@@ -205,6 +205,8 @@ Lalu dilakukan dengan daftar username serta password yang telah dibuat sebelumny
 hydra -L username.txt -P password.txt 192.168.137.144 ssh
 ```
 
+[![u42.jpg](https://s21.postimg.org/w2ze0lrc7/u42.jpg)](https://postimg.org/image/3q3wa55lv/)
+
 #### 5.3 Ncrack
 
 Untuk melakukan uji brute force dengan menggunakan ncrack install terlebih dahulu toolsnya
@@ -224,6 +226,8 @@ ncrack -p 22 --U username.txt -P password.txt 192.168.137.144
 ```
 nmap 192.168.137.144
 ```
+
+[![u43.jpg](https://s21.postimg.org/r5ltfhpd3/u43.jpg)](https://postimg.org/image/lhfioll0j/)
 
 # D. Uji Penetrasi 2
 
