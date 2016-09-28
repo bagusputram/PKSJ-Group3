@@ -434,5 +434,10 @@ ncrack -p 22 --U username.txt -P password.txt 192.168.137.144
 nmap 192.168.137.144
 ```
 
-
 # E. Kesimpulan dan Saran
+
+Dengan menggunakan brute force attack tools, server yang tidak memiliki fitur keamanan yang cukup baik tidak akan bisa menahan gempuran tools yang melakukan berkali-kali percobaan pada server untuk mendapatkan username serta password yang digunakan oleh server.
+
+Tools yang cukup powerfull dalam menjalankan brute force attack adalah Hydra dikarenakan pada percobaan diatas, password dari server dapat diketahui hanya dalam waktu sembilan detik, dengan memiliki jumlah username lima serta password enam, lalu tools yang kedua adalah Medusa dengan memiliki waktu 57 detik, sedangkan yang terakhir adalah NCrack dengan catatan waktu 33 detik namun menggunakan satu percobaan username saja, tidak seperti kedua tools sebelumnya yang menggunakan lima percobaan username.
+
+Countermeasure yang dapat dilakukan bermacam-macam, pengguna dapat menggunakan tools maupun merubah konfigurasi dari ssh itu sendiri. Seperti menambahkan IPTABLES pada ssh sehingga mengurangi kemungkinan untuk dilakukan brute force attack dikarenakan akan ada masa timeout apabila percobaan gagal dalam waktu tertentu dengan rentang waktu yang telah ditentukan. Selain merubah pengaturan pada ssh dapat pula ditambahkan tools agar lebih powerful sehingga attacker langsung tidak dapat melakukan penyerangan seperti fail2ban serta DenyHosts.
