@@ -4,11 +4,11 @@
 
 # Uji Penetrasi 1
 
-## Langkah Instalasi Ubuntu Server
+## 1. Langkah Instalasi Ubuntu Server
 
-## Langkah Instalasi Kali Linux
+## 2. Langkah Instalasi Kali Linux
 
-## Langkah Instalasi SSH Server (OpenSSH)
+## 3. Langkah Instalasi SSH Server (OpenSSH)
 
 Instalasi OpenSSH pada Ubuntu Server memanfaatkan package yang telah disediakan linux dengan melakukan get package maka OpenSSH akan terinstall pada Ubuntu Server
 
@@ -25,7 +25,7 @@ Untuk menjalankan OpenSSH dilakukan cara
 sudo service ssh start
 ```
 
-## Langkah Instalasi SSH Brute Force Tools (Medusa)
+## 4. Langkah Instalasi SSH Brute Force Tools (Medusa)
 
 Untuk melakukan brute force pada sebuah server dibutuhkan SSH Brute Force Tools, terdapat berbagai macam tools yang bisa digunakan diantaranya adalah Hydra, Ncrack, Medusa, dll.
 
@@ -57,7 +57,7 @@ sudo make && sudo make install
 
 Dengan kedua cara diatas maka Brute Force Tools Medusa akan terinstall pada Linux.
 
-## Langkah Uji Penetrasi dengan SSH Brute Force Tools
+## 5. Langkah Uji Penetrasi dengan SSH Brute Force Tools
 
 # D. Uji Penetrasi 2
 
