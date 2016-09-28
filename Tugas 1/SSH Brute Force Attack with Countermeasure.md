@@ -43,6 +43,46 @@ Untuk melakukan pengujian penetrasi diatas diperlukan beberapa tool. Yang utama 
 # C. Uji Penetrasi 1
 
 ## 1. Langkah Instalasi Ubuntu Server
+Ubuntu Server akan diinstall secara virtual menggunakan VMware yang sudah terinstall pada Windows 10. Sebelum menginstall Ubuntu Server tentu saja harus mendownload installer Ubuntu Servernya.
+```
+http://www.ubuntu.com/download/server
+```
+Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pada VMware.
+1. Create a New Virtual Machine pada VMware Workstation kemudian akan muncul window baru seperti gambar dibawah ini
+
+ Untuk tipe konfigurasinya pilih Custom, karena akan ada yang harus diubah konfigurasinya. Kemudian klik Next
+2. Pada window ini tidak perlu diubah konfigurasinya. Konfigurasinya kurang lebih seperti gambar dibawah ini. Klik Next untuk menuju windows selanjutnya.
+
+3. Pada window ini pilih lokasi installer yang sudah didownload sebelumnya.
+
+ Klik Browse kemudian pilih lokasi installer Ubuntu Server. Setelah memilih lokasi installer klik Next untuk menuju window selanjutnya
+ 
+4. Berikan nama untuk Virtual Machine yang akan dibuat.
+
+ Berikan nama Virtual Machine yang akan dibuat sesuai keinginan. Jika ingin mengganti lokasi Virtual Machine yang akan diinstall bisa klik Browse kemudian pilih lokasi yang baru yang diinginkan. Klik Next untuk menuju windows selanjutnya.
+ 
+5. Pilih jumlah processor dan juga core yang akan digunakan untuk menjalankan Virtual Machine ini
+
+ Konfigurasi processor mengikuti processor yang digunakan pada komputer masing-masing. Supaya tidak terlalu memberatkan konfigurasi yang digunakan seperti gambar di atas.
+ 
+6. Pilih jumlah memory yang akan digunakan
+
+ Konfigurasi memory disesuaikan dengan jumlah memory yang dimiliki komputer masing-masing. Komputer yang digunakan memiliki memory 8GB sehingga bila 1GB digunakan untuk menjalankan Virtual Machine tidak akan menjadi masalah.
+ 
+7. Pilih tipe koneksi internetnya
+
+ Konfigurasikan seperti pada gambar di atas.
+ 
+8. Pada window ini tidak perlu diubah konfigurasinya. Langsung klik next untuk menuju window selanjutnya
+
+9. Pada window ini juga tidak diperlukan perubahan pada konfigurasinya. Klik next untuk menuju window selanjutnya.
+
+10. Membuat Virtual Disk untuk Virtual Machine yang akan diinstall
+
+ Pilih sesuai gambar di atas untuk membuat Virtual Disk yang baru. Kemudian klik next
+
+11. 
+
 
 ## 2. Langkah Instalasi Kali Linux
 
