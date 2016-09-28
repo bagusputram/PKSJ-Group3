@@ -414,6 +414,25 @@ Lalu dilakukan dengan daftar username serta password yang telah dibuat sebelumny
 hydra -L username.txt -P password.txt 192.168.137.144 ssh
 ```
 
+#### 3.3 Ncrack
+
+Untuk melakukan uji brute force dengan menggunakan ncrack install terlebih dahulu toolsnya
+
+```
+sudo apt-get install ncrack
+```
+
+Lalu dilakukan dengan daftar username serta password yang telah dibuat sebelumnya
+
+```
+ncrack -p 22 --U username.txt -P password.txt 192.168.137.144
+```
+
+-p adalah port yang terbuka untuk melakukan penyerangan ssh dengan melihat terlebih dahulu port mana saja yang terbuka dengan cara
+
+```
+nmap 192.168.137.144
+```
 
 
 # E. Kesimpulan dan Saran
