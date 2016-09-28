@@ -175,6 +175,12 @@ Setelah membuat daftar username serta password yang akan digunakan dalam melakuk
 medusa -h IP HOST -U username.txt -P password.txt -M ssh
 ```
 
+[![u27.jpg](https://s21.postimg.org/p7a3kdqjr/u27.jpg)](https://postimg.org/image/ky5di7nab/)
+
+Hasilnya
+
+[![u28.jpg](https://s21.postimg.org/3ywf2yc2v/u28.jpg)](https://postimg.org/image/9n2ptugf7/)
+
 Syntax yang digunakan bisa seperti diatas apabila attacker memiliki daftar username serta password, namun bila attacker ingin mencoba melakukan attack dengan menggunakan satu username serta satu password bisa menggunakan syntax 
 
 ```
