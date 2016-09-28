@@ -62,6 +62,7 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
 3. Pada window ini pilih lokasi installer yang sudah didownload sebelumnya.
 
  [![u3.jpg](https://s5.postimg.org/bvvoj0ldz/image.jpg)](https://postimg.org/image/a42po420z/)
+
  Klik Browse kemudian pilih lokasi installer Ubuntu Server. Setelah memilih lokasi installer klik Next untuk menuju window selanjutnya
 
 4. Berikan nama untuk Virtual Machine yang akan dibuat.
