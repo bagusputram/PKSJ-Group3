@@ -62,6 +62,8 @@ Untuk menjalankan OpenSSH dilakukan cara
 sudo service ssh start
 ```
 
+![](https://drive.google.com/file/d/0B0cvfLGGqXWMci1SWTlfa1dmck0/view?usp=sharing)
+
 ## 4. Langkah Instalasi SSH Brute Force Tools (Medusa)
 
 Untuk melakukan brute force pada sebuah server dibutuhkan SSH Brute Force Tools, terdapat berbagai macam tools yang bisa digunakan diantaranya adalah Hydra, Ncrack, Medusa, dll.
@@ -308,7 +310,8 @@ iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update \
 
 Rule diatas akan memblock host setelah melakukan percobaan yang salah sebanyak 4 kali dalam waktu 60 detik
 
-
 ### 3. Langkah Uji Penetrasi dengan SSH Brute Force Tools
+
+
 
 # E. Kesimpulan dan Saran
