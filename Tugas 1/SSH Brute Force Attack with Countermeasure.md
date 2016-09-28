@@ -85,6 +85,8 @@ Cara melakukan penginstallan pada kali linux pun sama dalam melakukan penginstal
 sudo apt-get install build-essential make patch subversion openssl libssl-dev libpq-dev libgcrypt11-dev libgnutls-dev libsvn-dev zlib1g-dev libssh2-1-dev libnl-dev gettext autoconf tcl8.5 libpcap0.8-dev python-scapy python-dev cracklib-runtime macchanger-gtk tshark ethtool
 ```
 
+[![u21.jpg](https://s21.postimg.org/gtztbz1yf/u21.jpg)](https://postimg.org/image/wfh4vxdwj/)
+
 Namun biasanya pada Kali Linux telah terinstall Brute Force Tools seperti medusa sehingga tidak perlu melakukan get package, namun bila tidak menggunakan Kali Linux bisa menggunakan syntax diatas atau dengan mendownload tar medusa dengan cara dibawah ini.
 
 ```
@@ -123,7 +125,6 @@ sudo apt-get install ncrack
 ```
 
 
-
 ## 5. Langkah Uji Penetrasi dengan SSH Brute Force Tools
 
 #### 5.1 Medusa
@@ -146,6 +147,8 @@ toor
 administrator
 ubuntuserver
 ```
+
+[![u24.jpg](https://s21.postimg.org/6nr7szhk7/u24.jpg)](https://postimg.org/image/pg32wkdyb/)
 
 Selanjutnya dibuatkan daftar password yang akan dicoba
 
