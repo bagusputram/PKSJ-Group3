@@ -70,7 +70,10 @@ sudo service ssh start
 
 [![u20.jpg](https://s21.postimg.org/rfjonz89z/u20.jpg)](https://postimg.org/image/7868voasj/)
 
-## 4. Langkah Instalasi SSH Brute Force Tools (Medusa)
+## 4. Langkah Instalasi SSH Brute Force Tools
+
+
+#### 4.1 Medusa
 
 Untuk melakukan brute force pada sebuah server dibutuhkan SSH Brute Force Tools, terdapat berbagai macam tools yang bisa digunakan diantaranya adalah Hydra, Ncrack, Medusa, dll.
 
@@ -101,6 +104,25 @@ sudo make && sudo make install
 ```
 
 Dengan kedua cara diatas maka Brute Force Tools Medusa akan terinstall pada Linux.
+
+
+#### 4.2 Hydra
+
+Untuk melakukan uji brute force dengan menggunakan hydra install terlebih dahulu toolsnya
+
+```
+sudo apt-get install hydra
+```
+
+#### 4.3 Ncrack
+
+Untuk melakukan uji brute force dengan menggunakan ncrack install terlebih dahulu toolsnya
+
+```
+sudo apt-get install ncrack
+```
+
+
 
 ## 5. Langkah Uji Penetrasi dengan SSH Brute Force Tools
 
