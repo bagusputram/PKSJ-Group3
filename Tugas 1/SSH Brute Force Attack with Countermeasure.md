@@ -1,11 +1,19 @@
 # A. Pendahuluan
 
 Uji penetrasi(penetration test) adalah cara yang dapat digunakan unruk mengindentifikasi terentanan yang ada dalam sistem atau jaringan yang sudah memiliki langkah - langkah keamanan sebagai langkah preventif. Sebuah tes penetrasi biasanya melibatkan penggunaan metode yang dilakukan oleh individu yang terpercaya yang sengaja menyerang dengan logika yang sama seperti yang digunakan oleh penyusup dari luar atau hacker.
-Tergantung pada jenis tes yang dilakukan, ini mungkin saja hanya melibatkan pemindaian sederhana sebuah alamat IP untuk mengidentifikasi mesin yang sedang beroperasi(live) atau dengan desain yang lebih tajam misalnya mengambil akases root/admin. Hasil penetration test ini atau serangan ini kemudian didokumentasikan dan disajikan sebagai laporan kepada pemilik sistem dan kerentanan diidentifikasi kemudian dapat diselesaikan
+
+Tergantung pada jenis tes yang dilakukan, ini mungkin saja hanya melibatkan pemindaian sederhana sebuah alamat IP untuk mengidentifikasi mesin yang sedang beroperasi(live) atau dengan desain yang lebih tajam misalnya mengambil akases root/admin. Hasil penetration test ini atau serangan ini kemudian didokumentasikan dan disajikan sebagai laporan kepada pemilik sistem dan kerentanan diidentifikasi kemudian dapat diselesaikan.
+
+Uji penetrasi yang akan dilakukan pada Ubuntu Server dan Kali Linux dimana Ubuntu server berperan sebagai host(yang diserang), sedangkan Kali Linux berperan sebagai pentester(yang menyerang).
 
 # B. Dasar Teori
 
-# Uji Penetrasi 1
+Untuk melakukan pengujian penetrasi diatas diperlukan beberapa tool. Yang utama adalah OS yang tertera diatas yaitu Ubuntu server dan juga Kali Linux. Disini OS yang kami gunakan terinstal pada sebuah virtual machine dengan main OSnya Windows. Adapun tool-tool yang digunakan pada uji penetrasi ini antara lain :
+
+1. VMWare Workstation
+   VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
+
+# C. Uji Penetrasi 1
 
 ## 1. Langkah Instalasi Ubuntu Server
 
