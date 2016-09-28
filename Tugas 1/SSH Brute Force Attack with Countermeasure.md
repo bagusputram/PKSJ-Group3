@@ -133,6 +133,51 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
 
 ## 2. Langkah Instalasi Kali Linux
 
+Untuk instalasi Kali Linux menggunakan Image untuk VMware yang bisa didownload melalui link berikut:
+```
+https://www.offensive-security.com/kali-linux-vmware-virtualbox-image-download/
+```
+ [![k1.jpg](https://s5.postimg.org/luptwz9l3/image.png)](https://postimg.org/image/fts4zwmyr/)
+
+Seperti gambar di atas pilih Kali Linux 64 bit VM untuk mendownload image VMware Kali Linux. File yang di download masih berupa file kompres.
+
+1. Extract file kompres ke dalam folder yang diinginkan
+
+  [![k7.jpg](https://s5.postimg.org/ajn68m2pz/image.jpg)](https://postimg.org/image/blxcr5lj7/)
+
+ Pada gambar di atas file di extract ke D:\Master\Virtual Machine
+
+2. Buka VMware Workstation dan pilih "Open a Virtual Machine"
+
+ [![k2.jpg](https://s5.postimg.org/d62opjtxj/image.jpg)](https://postimg.org/image/jjrrssytf/)
+
+ Kemudian pilih folder tempat menyimpan file hasil extract pada langkah sebelumnya. Cari file dengan extension *.vmx seperti pada gambar di atas. Kemudian klik open.
+
+3. Klik Edit Virtual Machine settings
+
+  [![k8.jpg](https://s5.postimg.org/rlg0aphl3/image.jpg)](https://postimg.org/image/saysn2i4j/)
+
+  [![k9.jpg](https://s5.postimg.org/irp3tlumf/image.jpg)](https://postimg.org/image/fkuk9za6b/)
+
+ Seperti gambar di atas konfigurasikan Virtual Machine sesuai kebutuhan yang tidak membebankan komputer yang digunakan.
+
+4. Klik Power on this virtual machine
+ [![k8.jpg](https://s5.postimg.org/rlg0aphl3/image.jpg)](https://postimg.org/image/saysn2i4j/)
+
+ [![k3.jpg](https://s5.postimg.org/ad9h5itl3/image.jpg)](https://postimg.org/image/76exlw94z/)
+
+5. Masukkan Username "root"
+ [![k4.jpg](https://s5.postimg.org/ulwur8sw7/image.jpg)](https://postimg.org/image/5fvwkerlv//)
+ Kemudian klik Next
+
+6. Masukkan Password "toor"
+  [![k5.jpg](https://s5.postimg.org/ckdptfyvb/image.jpg)](https://postimg.org/image/i8k0kc37n/)
+
+ Kemudian klik Sign In
+
+7. Tampilan desktop Kali Linux
+  [![k6.jpg](https://s5.postimg.org/921px1xzb/image.png)](https://postimg.org/image/w3ib2sxmr/)
+
 ## 3. Langkah Instalasi SSH Server (OpenSSH)
 
 Instalasi OpenSSH pada Ubuntu Server memanfaatkan package yang telah disediakan linux dengan melakukan get package maka OpenSSH akan terinstall pada Ubuntu Server
