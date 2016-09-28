@@ -36,6 +36,10 @@ Untuk melakukan pengujian penetrasi diatas diperlukan beberapa tool. Yang utama 
  
    Denyhosts adalah open source dan program keamanan berbasis log pencegahan intrusi gratis untuk server SSH dikembangkan di Python bahasa oleh Phil Schwartz. Ini digunakan untuk menganalisa terhadap serangan yang secara brutal atau berusaha memasuki server menggunakan SSH.
 
+7. Fail2Ban
+ 
+   Fail2ban adalah salah satu aplikasi yang digunakan untuk mencegah serangan brute force. Cara kerja fail2ban adalah dengan memblokir IP address yang memiliki ciri-ciri atau tanda-tanda serangan brute force terhadap sistem keamanan komputer (server). Fail2ban sangat diperlukan untuk menimalisir kemungkinan pengambilalihan server yang anda miliki. Kemungkinan-kemungkinan seperti itu bisa saja terjadi, apalagi jika IP server anda tersebut sudah tersebar ke seantero dunia maya. Kelebihan file2ban jika dibandingkan dengan software sejenis lainnya terletak pada banyaknya service yang dapat ditangani oleh fail2ban, seperti SSH (Openssh dan dropbear), FTP (proftpd dan vsftpd), email (postfix) dan banyak lagi service lainnya yang mampu ditangani oleh fail2ban. Selain itu file2ban juga terasa lebih simple, karena tidak perlu memasukan data IP yang mencoba untuk melakukan serangan brute force ke iptables untuk dilakukan pemblokiran satu-persatu.
+
 # C. Uji Penetrasi 1
 
 ## 1. Langkah Instalasi Ubuntu Server
