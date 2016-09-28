@@ -400,4 +400,20 @@ Dengan syntax diatas maka attacker melakukan attack dengan mencoba username admi
 
 Apabilan berhasil maka medusa akan memberikan feedback berupa username dan password yang digunakan oleh server seperti gambar dibawah ini
 
+#### 3.2 Hydra
+
+Untuk melakukan uji brute force dengan menggunakan hydra install terlebih dahulu toolsnya
+
+```
+sudo apt-get install hydra
+```
+
+Lalu dilakukan dengan daftar username serta password yang telah dibuat sebelumnya
+
+```
+hydra -L username.txt -P password.txt 192.168.137.144 ssh
+```
+
+
+
 # E. Kesimpulan dan Saran
