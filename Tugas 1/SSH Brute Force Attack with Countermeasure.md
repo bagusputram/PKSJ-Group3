@@ -247,17 +247,25 @@ Selain langkah diatas dapat dilakukan dengan cara
 cd /tmp/ && wget http://downloads.sourceforge.net/project/denyhost/denyhost-2.8/denyhosts-2.8.tar.gz
 ```
 
+[![u33.jpg](https://s21.postimg.org/yzhd3rquf/u33.jpg)](https://postimg.org/image/3sipzv2xv/)
+
 ```
 tar xzf denyhosts*.tar.gz
 ```
+
+[![u34.jpg](https://s21.postimg.org/5llmo6o4n/u34.jpg)](https://postimg.org/image/4w2ubtnkz/)
 
 ```
 cd DenyHosts*
 ```
 
+[![u35.jpg](https://s21.postimg.org/vv6p6za1z/u35.jpg)](https://postimg.org/image/4xcs58per/)
+
 ```
 sudo python setup.py install
 ```
+
+[![u36.jpg](https://s21.postimg.org/e6eyfcyav/u36.jpg)](https://postimg.org/image/qxt4lv82r/)
 
 ```
 sudo cp /usr/local/bin/daemon-control-dist /etc/init.d/denyhosts
@@ -268,6 +276,8 @@ Setelah DenyHosts terinstall maka perlu dilakukan konfigurasi terlebih dahulu de
 ```
 sudo vi /etc/init.d/denyhosts
 ```
+
+[![u39.jpg](https://s21.postimg.org/chax4eox3/u39.jpg)](https://postimg.org/image/6gd87c2ar/)
 
 Rubah file tersebut seperti dibawah
 
