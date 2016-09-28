@@ -1,3 +1,7 @@
+# A. Pendahuluan
+
+# B. Dasar Teori
+
 # Uji Penetrasi 1
 
 ## Langkah Instalasi Ubuntu Server
