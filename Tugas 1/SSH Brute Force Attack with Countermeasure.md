@@ -146,7 +146,9 @@ Apabilan berhasil maka medusa akan memberikan feedback berupa username dan passw
 
 # D. Uji Penetrasi 2
 
-### 1. Langkah Konfigurasi DenyHosts
+### 1. Langkah Konfigurasi DenyHosts dan Fail2Ban
+
+#### 1.1 DenyHosts
 
 Ubuntu server harus menginstall DenyHosts terlebih dahulu dengan syntax 
 
@@ -221,7 +223,81 @@ sshd: 172.145.33.45
 
 Bila user tidak menambahkan hosts yang diperbolehkan maka DenyHosts memperbolehkan IP dalam subnet mask yang sama pada server untuk memperbolehkan host mengaksers server
 
-### 2. Langkah Konfigurasi SSH Server
+#### 1.2 Fail2Ban
+
+Install fail2ban pada Ubuntu Server dengan syntax
+
+```
+sudo apt-get install fail2ban
+```
+
+Setelah fail2ban diinstall pada ubuntu server lakukan konfigurasi sesuai dengan keinginan user
+
+Pertama salin terlebih dahulu pengaturan yang ada pada fail2ban dengan syntax
+
+```
+awk '{ printf "# "; print; }' /etc/fail2ban/jail.conf | sudo tee /etc/fail2ban/jail.local
+```
+
+Kemudian rubah file tersebut
+
+```
+sudo nano /etc/fail2ban/jail.conf
+```
+
+Pada file tersebut ada beberapa fitur yang dapat dikonfigurasi diantaranya adalah
+
+1. IP Ignore
+IP pengguna yang telah diatur agar tidak bisa mengakses server
+```
+[DEFAULT]
+. . .
+ignoreip = 127.0.0.1/8
+. . .
+```
+2. Bantime
+Waktu dimana client akan di ban oleh server
+```
+[DEFAULT]
+. . .
+bantime = 600
+. . .
+```
+3. Findtime and Maxretry
+Parameter dimana user dapat melakukan maksimal kesalahan dalam jangka waktu tertentu
+```
+[DEFAULT]
+. . .
+findtime = 600
+maxretry = 3
+. . .
+```
+
+
+### 2. Langkah Konfigurasi SSH Server dengan Menambahkan IPTABLES
+
+Membuat Whitelist dari IPTABLE terlebih dahulu
+
+`iptables -N SSH_WHITELIST`
+
+Membuat trusted host yang diinginkan
+`iptables -A SSH_WHITELIST -s TRUSTED_HOST_IP -m recent --remove --name SSH -j ACCEPT
+`
+
+Menambahkan rule blocking terlebih dahulu
+
+```
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --set \
+ --name SSH
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -j SSH_WHITELIST
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update \
+ --seconds 60 --hitcount 4 --rttl --name SSH -j ULOG --ulog-prefix SSH_brute_force
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update \
+ --seconds 60 --hitcount 4 --rttl --name SSH -j DROP
+```
+
+Rule diatas akan memblock host setelah melakukan percobaan yang salah sebanyak 4 kali dalam waktu 60 detik
+
 
 ### 3. Langkah Uji Penetrasi dengan SSH Brute Force Tools
 
