@@ -54,6 +54,12 @@ Instalasi OpenSSH pada Ubuntu Server memanfaatkan package yang telah disediakan 
 sudo apt-get install openssh-server
 ```
 
+[![u16.jpg](https://s13.postimg.org/qoo454hd3/u16.jpg)](https://postimg.org/image/tvinor1sz/)
+
+[![u17.jpg](https://s21.postimg.org/d5a4chrxj/u17.jpg)](https://postimg.org/image/p75i6n15v/)
+
+[![u18.jpg](https://s21.postimg.org/lotia909z/u18.jpg)](https://postimg.org/image/thk62868z/)
+
 Dengan memsukkan syntax diatas ke dalam terminal pada Ubuntu Server maka OpenSSH akan terinstall dengan pengaturan default
 
 Untuk menjalankan OpenSSH dilakukan cara
@@ -61,6 +67,8 @@ Untuk menjalankan OpenSSH dilakukan cara
 ```
 sudo service ssh start
 ```
+
+[![u20.jpg](https://s21.postimg.org/rfjonz89z/u20.jpg)](https://postimg.org/image/7868voasj/)
 
 ## 4. Langkah Instalasi SSH Brute Force Tools (Medusa)
 
