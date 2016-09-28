@@ -251,7 +251,7 @@ sudo nano /etc/fail2ban/jail.conf
 
 Pada file tersebut ada beberapa fitur yang dapat dikonfigurasi diantaranya adalah
 
-1. IP Ignore
+- IP Ignore
 
 IP pengguna yang telah diatur agar tidak bisa mengakses server
 ```
@@ -261,8 +261,7 @@ ignoreip = 127.0.0.1/8
 . . .
 ```
 
-
-2. Bantime
+- Bantime
 
 Waktu dimana client akan di ban oleh server
 ```
@@ -273,7 +272,7 @@ bantime = 600
 ```
 
 
-3. Findtime and Maxretry
+- Findtime and Maxretry
 
 Parameter dimana user dapat melakukan maksimal kesalahan dalam jangka waktu tertentu
 ```
