@@ -114,6 +114,79 @@ Apabilan berhasil maka medusa akan memberikan feedback berupa username dan passw
 
 ### 1. Langkah Konfigurasi DenyHosts
 
+Ubuntu server harus menginstall DenyHosts terlebih dahulu dengan syntax 
+
+```
+sudo apt-get install denyhosts
+```
+
+Selain langkah diatas dapat dilakukan dengan cara
+
+```
+cd /tmp/ && wget http://downloads.sourceforge.net/project/denyhost/denyhost-2.8/denyhosts-2.8.tar.gz
+```
+
+```
+tar xzf denyhosts*.tar.gz
+```
+
+```
+cd DenyHosts*
+```
+
+```
+sudo python setup.py install
+```
+
+```
+sudo cp /usr/local/bin/daemon-control-dist /etc/init.d/denyhosts
+```
+
+Setelah DenyHosts terinstall maka perlu dilakukan konfigurasi terlebih dahulu dengan merubah denyhosts bin dengan cara
+
+```
+sudo vi /etc/init.d/denyhosts
+```
+
+Rubah file tersebut seperti dibawah
+
+```
+###############################################
+#### Edit these to suit your configuration ####
+###############################################
+
+DENYHOSTS_BIN = “/usr/local/bin/denyhosts.py”
+DENYHOSTS_LOCK = “/run/denyhosts.pid”
+DENYHOSTS_CFG = “/etc/denyhosts.conf”
+
+PYTHON_BIN = “/usr/bin/env python”
+```
+
+User dapat menambahkan hosts yang diizinkan untuk melakukan login terhadap server dengan cara
+
+```
+sudo vi /etc/hosts.allow
+```
+
+Lalu tambahkan IP pada bagian paling bawah
+
+```
+# /etc/hosts.allow: list of hosts that are allowed to access the system.
+
+# See the manual pages hosts_access(5) and hosts_options(5).
+#
+# Example: ALL: LOCAL @some_netgroup
+# ALL: .foobar.edu EXCEPT terminalserver.foobar.edu
+#
+# If you’re going to protect the portmapper use the name “rpcbind” for the
+# daemon name. See rpcbind(8) and rpc.mountd(8) for further information.
+#
+
+sshd: 172.145.33.45 
+```
+
+Bila user tidak menambahkan hosts yang diperbolehkan maka DenyHosts memperbolehkan IP dalam subnet mask yang sama pada server untuk memperbolehkan host mengaksers server
+
 ### 2. Langkah Konfigurasi SSH Server
 
 ### 3. Langkah Uji Penetrasi dengan SSH Brute Force Tools
