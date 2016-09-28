@@ -48,9 +48,11 @@ Ubuntu Server akan diinstall secara virtual menggunakan VMware yang sudah terins
 http://www.ubuntu.com/download/server
 ```
 Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pada VMware.
+
 1. Create a New Virtual Machine pada VMware Workstation kemudian akan muncul window baru seperti gambar dibawah ini
 
  Untuk tipe konfigurasinya pilih Custom, karena akan ada yang harus diubah konfigurasinya. Kemudian klik Next
+ 
 2. Pada window ini tidak perlu diubah konfigurasinya. Konfigurasinya kurang lebih seperti gambar dibawah ini. Klik Next untuk menuju windows selanjutnya.
 
 3. Pada window ini pilih lokasi installer yang sudah didownload sebelumnya.
