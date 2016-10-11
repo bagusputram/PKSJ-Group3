@@ -23,4 +23,5 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.18, leaguemanager 4.1.1, (nanti tambahin)
 
 4.	WPscan
-	
+
+	WPScan adalah scanner keamanan yang memeriksa keamanan WordPress menggunakan metode “black box”. Fitur utama: pencacah username, multithreaded password bruteforcing, pencacah versi plugin WordPress dan pencacahan kerentanan sistem.
