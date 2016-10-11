@@ -1,0 +1,26 @@
+A. Pendahuluan
+
+SQL injection adalah serangan yang memanfaatkan kelalaian dari website yang mengijinkan user untuk menginputkan data tertentu tanpa melakukan filter terhadap malicious character. Inpputan tersebut biasanya di masukkan pada box search atau bagian - bagian tertentu dari website yang berinteraksi dengan database SQL dari situs tersebut. Perintah yang dimasukkan para attacker biasanya adalah sebiah data yang mengandung link tertentu yang mengarahkan para korban ke website khusus yang digunakan para attacker untuk mengambil data pribad korban. Untuk menghindari link berbahaya dari website yang telah terinfeksi serangan SQL injection, dapat menggunakan aplikasi tambahan seerti NoScript yang merupakaan Add-ons untuk aplikasi web browser Firefox.
+
+Untuk uji coba kali ini akan dilakukan pada wordpress(local) dengan beberapa plugin(video player 1.5.18, leaguemanager 4.1.1) dan juga tool uji SQL injection(WPscan, sqlmap). Uji coba akan dilakukan pada sistem operasi Kali Linux.
+
+B. Dasar Teori
+
+Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sistem operasi Kali Linux. Website yang akan diuji yaitu wordpress yang diinstal pada local dengan beberapa plugin. Piranti yang digunakan untuk uji SQL injection antara lain WPscan, sqlmap dan beberapa tool lainnya. Mengenai piranti yang akan digunakan akan dijelaskan berikut ini :
+
+1.  Kali Linux
+
+	Kali Linux adalah salah satu distribusi Linux tingkat lanjut untuk Penetration Testing dan audit keamanan. Distro ini dulunya adalah distro Backtrack, yang kemudian memutuskan mengganti nama distronya tersebut menjadi Kali Linux di versi terbarunya. Kali Linux ini akan dijadikan sebagai standarisasi distro Linux yang digunakan untuk percobaan penetrasi.
+
+2.  Oracle VM VirtualBox
+
+	Virtualbox adalah software gratis milik Oracle yang fungsi utamanya adalah mem-visualisasi-kan sebuah atau banyak Sistem Operasi (OS) di dalam Sistem Operasi utama kita. Misalnya anda memiliki sistem operasi windows namun ingin melakukan penelitian pada linux. Untuk menginstalasi dual boot perlu usaha sedikit extra, sedangkan dengan menggunakan VirtualBox, linux anda akan berjalan di dalam windows sehingga anda dapat sekaligus menggunakan windows.
+
+3.	Wordpress
+
+	WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
+
+	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.18, leaguemanager 4.1.1, (nanti tambahin)
+
+4.	WPscan
+	
