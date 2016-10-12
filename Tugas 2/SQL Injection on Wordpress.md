@@ -414,9 +414,13 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo wget http://downloads.wordpress.org/plugin/wysija-newsletters.2.7.2.zip`
     
+    [![45.png](https://s12.postimg.org/4fdjovxz1/image.png)](https://postimg.org/image/dzx6brnax/)
+    
     Lalu extract file yang telah didownload tersebut
     
     `sudo unzip wysija-newsletters.2.7.2.zip`
+    
+    [![46.png](https://s12.postimg.org/5ixo0uim5/image.png)](https://postimg.org/image/hxkg16a49/)
     
     Aktifkan plugin pada menu add plugin didalam dashboard pengguna
     
