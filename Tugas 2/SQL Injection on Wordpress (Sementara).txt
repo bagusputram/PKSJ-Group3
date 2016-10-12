@@ -27,13 +27,14 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	WPScan adalah scanner keamanan yang memeriksa keamanan WordPress menggunakan metode “black box”. Fitur utama: pencacah username, multithreaded password bruteforcing, pencacah versi plugin WordPress dan pencacahan kerentanan sistem. Jika anda memiliki website menggunakan Wordpress, sangat disarankan untuk menyerang website anda sendiri dan kemudian melakukan perbaikan terhadap website anda sebelum hacker asli yang melakukannya.
 
 5.	sqlmap
+
 	sqlmap adalah tools opensource yang mendeteksi dan melakukan exploit pada bug SQL injection secara otomatis. Dengan melakukan serangan SQL injection seorang attacker dapat mengambil alih serta memanipulasi sebuah database di dalam sebuah server.
 
 6.	<monggo ditambahkan>	
 
 7.	<monggo ditambahkan>
 
-C. Langkah Uji dan Instalasi
+C. Instalasi
 
 1. Instalasi XAMPP
 
