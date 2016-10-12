@@ -1,0 +1,259 @@
+#A. Pendahuluan
+
+SQL injection adalah serangan yang memanfaatkan kelalaian dari website yang mengijinkan user untuk menginputkan data tertentu tanpa melakukan filter terhadap malicious character. Inpputan tersebut biasanya di masukkan pada box search atau bagian - bagian tertentu dari website yang berinteraksi dengan database SQL dari situs tersebut. Perintah yang dimasukkan para attacker biasanya adalah sebiah data yang mengandung link tertentu yang mengarahkan para korban ke website khusus yang digunakan para attacker untuk mengambil data pribad korban. Untuk menghindari link berbahaya dari website yang telah terinfeksi serangan SQL injection, dapat menggunakan aplikasi tambahan seerti NoScript yang merupakaan Add-ons untuk aplikasi web browser Firefox.
+
+Untuk uji coba kali ini akan dilakukan pada wordpress(local) dengan beberapa plugin(video player 1.5.18, leaguemanager 4.1.1) dan juga tool uji SQL injection(WPscan, sqlmap). Uji coba akan dilakukan pada sistem operasi Kali Linux.
+
+#B. Dasar Teori
+
+Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sistem operasi Kali Linux. Website yang akan diuji yaitu wordpress yang diinstal pada local dengan beberapa plugin. Piranti yang digunakan untuk uji SQL injection antara lain WPscan, sqlmap dan beberapa tool lainnya. Mengenai piranti yang akan digunakan akan dijelaskan berikut ini :
+
+###1.  Kali Linux
+
+	Kali Linux adalah salah satu distribusi Linux tingkat lanjut untuk Penetration Testing dan audit keamanan. Distro ini dulunya adalah distro Backtrack, yang kemudian memutuskan mengganti nama distronya tersebut menjadi Kali Linux di versi terbarunya. Kali Linux ini akan dijadikan sebagai standarisasi distro Linux yang digunakan untuk percobaan penetrasi.
+
+
+
+###4.  VMWare Workstation
+	
+    VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
+
+
+###3.	Wordpress
+
+	WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
+
+	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.18, leaguemanager 4.1.1, (nanti tambahin)
+
+###4.	WPscan
+
+	WPScan adalah scanner keamanan yang memeriksa keamanan WordPress menggunakan metode “black box”. Fitur utama: pencacah username, multithreaded password bruteforcing, pencacah versi plugin WordPress dan pencacahan kerentanan sistem. Jika anda memiliki website menggunakan Wordpress, sangat disarankan untuk menyerang website anda sendiri dan kemudian melakukan perbaikan terhadap website anda sebelum hacker asli yang melakukannya.
+
+###5.	sqlmap
+
+	sqlmap adalah tools opensource yang mendeteksi dan melakukan exploit pada bug SQL injection secara otomatis. Dengan melakukan serangan SQL injection seorang attacker dapat mengambil alih serta memanipulasi sebuah database di dalam sebuah server.
+
+###6.	Ubuntu Server
+
+	
+
+
+7.	<monggo ditambahkan>
+
+#C. Instalasi
+
+1. Instalasi XAMPP
+
+	Untuk menjalankan Wordpress dibutuhkan sebuah webserver. Webserver yang akan digunakan disini adalah XAMPP karena telah mengandung SQL Server sebagai database server. Adapun langkah - langkah yang perlu dilakukan untuk instalasi XAMMPP antara lain :
+
+		1. Download XAMPP
+			Download XAMPP pada www.apachefriends.org/download.html. Download versi terbaru dari XAMPP untuk linux pada halaman tersebut.
+
+			<Gambar : install XAMPP\1>
+
+		2. Chmod Installer
+			Ubah permission file installer dengan cara mengetikkan command berikut pada terminal.
+
+			chmod +x xampp-linux-x64-7.0.9-1-installer.run
+
+			<Gambar : install XAMPP\2>
+
+		3. Run Installer
+			Run installer XAMPP dengan cara mengetikkan command berikut pada terminal.
+
+			./xampp-linux-x64-7.0.9-1-installer.run
+
+			<Gambar : install XAMPP\3>
+
+		4. Proses Instalasi
+			Ikuti petunjuk instalasi yang tersedia dengan mengklik next.
+
+			<Gambar : install XAMPP\4>
+
+			<Gambar : install XAMPP\5>
+
+			<Gambar : install XAMPP\6>
+
+			<Gambar : install XAMPP\7>
+
+			<Gambar : install XAMPP\8>
+
+		5. Jalankan semua server
+			Setelah XAMPP berhasil terinstall maka akan muncul UI XAMPP. Jalankan semua server dengan mengklik Start All pada tab Manage Servers
+
+			<Gambar : install XAMPP\9>
+
+2. Instalasi Wordpress
+	
+	Sebelum instalasi wordpress kita perlu menyiapkan database yang akan digunakan untuk wordpress tersebut. Selain itu kita perlu menyiapkan file wordpress yang akan diinstall. Adapun langkah - langkah installasinya adalah sebagai berikut :
+
+	1. Download Wordpress
+		Download wordpress dengan format .zip pada 
+
+		https://wordpress.org/download/
+
+		<Gambar : install Wordpress\1>
+
+	2. Persiapkan Database
+		Buka localhost/phpmyadmin pada browser kemudian klik new. Isikan nama database sesuai yang diinginkan. Disini database akan dinamai dengan nama "wp". Kemudian klik go.
+
+		<Gambar : install Wordpress\2>
+
+		<Gambar : install Wordpress\3>
+
+	3. Persiapan Instalasi
+		Pindahkan file installer wordpress(.zip) pada folder Download ke /opt/lampp/htdocs. Kemudian extract file .zip tersebut.
+
+		<Gambar : install Wordpress\4>
+
+	4. Mulai Instalasi
+		Buka localhost/wordpress pada browser. Kemudian klik let's go.
+
+		<Gambar : install Wordpress\5>
+
+	5. Melakukan Koneksi dengan Database
+		Setelah mengklik let's go, anda akan dimintai database yang akan digunakan pada wordpress ini. Isikan form sesuai dengan database yang telah dibuat. Password dapat dikosongkan jika memang tidak terdapat password pada database.
+
+		<Gambar : install Wordpress\6>
+
+	6. Wp-Config
+		Jika diminta membuat file wp-config.php, copykan text yang disediakan kemudian buat file baru pada /opt/lampp/htdocs/wordpress dengan nama wp-config.php . Setelah selesai klik "Run the install".
+
+		<Gambar : install Wordpress\7>
+
+		<Gambar : install Wordpress\8>
+
+	7. Site Informastion
+		Setelah itu isikan form Informasi mengenai site wordpress anda. Kemudian klik "Install WorPress".
+
+		<Gambar : install Wordpress\9>
+
+	8. Install Success!
+		Ketika Instalasi selesai akan menampilkan halaman seperti berikut :
+
+		<Gambar : install Wordpress\10>
+
+		Kemudian anda bisa langsung mengakses dashboard dengan login sesuai username dan password yang telah diisikan tadi.
+
+		<Gambar : install Wordpress\11>
+
+3. Instalasi Plugin
+	Plugin yang akan diuji disini antara lain Worpress Video Player v1.5.18, LeagueManager v4.1.1, ... ,... . Cara instalasi plugin semua sama pada wordpress. Adapun cara instalasi pluginnya yaitu :
+
+	1. Download Plugin 
+		Untuk plugin video player 1.5.18 dapat di download di :
+
+		https://wordpress.org/plugins/player/
+
+		<Gambar : install plugin\1>
+
+		Untuk plugin LeagueManage 4.1.1 dapat di download di :
+
+		https://wordpress.org/plugins/leaguemanager/
+
+		<Gambar : install plugin\6>
+
+	2. Instalasi
+		Untuk memulai install plugin, buka dashboard wordpress kemudian klik Plugins - Add New.
+
+		<Gambar : install plugin\2>
+
+		Kemudian klik Upload Plugin
+
+		<Gambar : install plugin\3>
+
+	3. Pilih plugin
+		Pilih plugin yang akan diinstal pada directory Downloads. Instalasi plugin sebaiknya dilakukan satu per satu.
+
+		<Gambar : install plugin\4>
+
+		<Gambar : install plugin\9>
+
+		Kemudian klik Install Now
+
+	4. Finish Install
+		Ketika selesai instalasi klik Activate Plugin.
+
+		<Gambar : install plugin\5>
+
+		<Gambar : install plugin\10>
+
+	5. Lakukan langkah yang sama untuk semua Plugin yang ingin diinstal
+
+4. Instalasi Tool SQL Injection
+	
+	Karena sistem operasi yang digunakan adalah Kali Linux, maka sqlmap dan WPscan telah terinstall. Untuk masing - masing tool mungkin diperlukan update database dari tool tersebut. Update akan dilakukan secara otomatis ketika kita menjalankan perintah pada tool tersebut.
+
+#D. Uji SQL Injection
+	
+	1. Pengujian dengan WPscan
+
+		Adapun uji yang akan dilakukan adalah fullscan wordpress, mencari username dari wordpress tersebut, mencoba brute force password dan mencari plugin yang vulnerable.
+
+		Hasil Pengujian :
+
+		a. Fullscan Wordpress
+			Fullscan dilakukan dengan command.
+
+			wpscan --url localhost/wordpress
+
+			Hasil :
+
+			<Gambar : hasil uji WP Scan\1>
+
+			<Gambar : hasil uji WP Scan\2>
+
+			<Gambar : hasil uji WP Scan\3>
+
+		b. Mencari Username
+			Untuk scanning username dilakukan dengan command.
+
+			wpscan --url localhost/wordpress --enumerate u
+
+			Hasil :
+
+			<Gambar : hasil uji WP Scan\4>
+
+		c. Brute Force password 
+			Untuk melakukan brute force password, terlebih dahulu buatlah file yang berisikan list password yang kira - kira merupakan password user wordpress dengan cara :
+
+			nano password.txt
+
+			<Gambar : hasil uji WP Scan\5>
+
+			Kemudian isikan list password perkiraan.
+
+			<Gambar : hasil uji WP Scan\6>
+
+			Setelah file password disiapkan, kemudian ketikkan command berikut :
+
+			wpscan --url localhost/wordpress --wordlist ~/password.txt --thread 10
+
+			<Gambar : hasil uji WP Scan\7>
+
+			Hasil :
+
+			<Gambar : hasil uji WP Scan\8>
+
+			Jika ada password yang cocok maka bagian password akan terisi seperti gambar diatas.
+
+		d. Scan Vulnerable Plugin
+			Untuk melakukan scan pada plugin hanya perlu dilakukan dengan mengtikkan command berikut :
+
+			wpscan --url localhost/wordpress --enumerate p
+
+			<Gambar : hasil uji WP Scan\9>
+
+			Hasil :
+
+			<Gambar : hasil uji WP Scan\10>
+
+			<Gambar : hasil uji WP Scan\11>
+
+			Nama plugin yang terdapat tanda seru berwarna merahnya merupakan plugin yang vulnerable.
+
+
+#E. Kesimpulan dan Saran
+
+
+
