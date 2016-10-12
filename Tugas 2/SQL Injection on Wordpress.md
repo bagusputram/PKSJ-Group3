@@ -53,7 +53,12 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo apt-get install apache2`
     
-3. 
+3. Install MySql
+	Install mySql sebagai database untuk menyimpah data yang dimiliki oleh wordpress
+    
+    `sudo apt-get install mysql-server mysql-client`
+    
+4. 
 
 #D. Instalasi Wordpress pada Kali Linux
 
