@@ -8,52 +8,51 @@ Untuk uji coba kali ini akan dilakukan pada wordpress(local) dengan beberapa plu
 
 Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sistem operasi Kali Linux. Website yang akan diuji yaitu wordpress yang diinstal pada local dengan beberapa plugin. Piranti yang digunakan untuk uji SQL injection antara lain WPscan, sqlmap dan beberapa tool lainnya. Mengenai piranti yang akan digunakan akan dijelaskan berikut ini :
 
-###1.  Kali Linux
+##1.  Kali Linux
 
-	Kali Linux adalah salah satu distribusi Linux tingkat lanjut untuk Penetration Testing dan audit keamanan. Distro ini dulunya adalah distro Backtrack, yang kemudian memutuskan mengganti nama distronya tersebut menjadi Kali Linux di versi terbarunya. Kali Linux ini akan dijadikan sebagai standarisasi distro Linux yang digunakan untuk percobaan penetrasi.
+Kali Linux adalah salah satu distribusi Linux tingkat lanjut untuk Penetration Testing dan audit keamanan. Distro ini dulunya adalah distro Backtrack, yang kemudian memutuskan mengganti nama distronya tersebut menjadi Kali Linux di versi terbarunya. Kali Linux ini akan dijadikan sebagai standarisasi distro Linux yang digunakan untuk percobaan penetrasi.
 
-###2.  Ubuntu Server
+##2.  Ubuntu Server
+Linux Ubuntu Server adalah system operasi turunan dari Linux Ubuntu yang di desain khusus dengan kernel yang telah dikustomisasi untuk bekerja sebagai system operasi server. Kernel Linux Ubuntu Server di desain khusus untuk bisa bekerja dengan lebih dari satu proses (multiprocessor) dengan dukungan NUMA pada 100Hz internal timer frequency dan menggunakan pennjadwalan deadline I/O.
 
-	Linux Ubuntu Server adalah system operasi turunan dari Linux Ubuntu yang di desain khusus dengan kernel yang telah dikustomisasi untuk bekerja sebagai system operasi server. Kernel Linux Ubuntu Server di desain khusus untuk bisa bekerja dengan lebih dari satu proses (multiprocessor) dengan dukungan NUMA pada 100Hz internal timer frequency dan menggunakan pennjadwalan deadline I/O. 
-    
-    Linux Ubuntu Server memiliki lisensi open source dan gratis serta merupakan turunan dari distro linux debian sehingga memiliki keamanan yang cukup tinggi. Linux Ubuntu Server ini mempunyai kebutuhan minimum atau resource yang harus dipenuhi diantaranya adalah processor 300 MHz, Memory 64MB, Harddisk 500MB dan VGA 640×480. Namun untuk meningkatkan kinerja pada computer resource pada computer harus disediakan lebih tinggi.
-    
-###3.  Oracle VM VirtualBox
+Linux Ubuntu Server memiliki lisensi open source dan gratis serta merupakan turunan dari distro linux debian sehingga memiliki keamanan yang cukup tinggi. Linux Ubuntu Server ini mempunyai kebutuhan minimum atau resource yang harus dipenuhi diantaranya adalah processor 300 MHz, Memory 64MB, Harddisk 500MB dan VGA 640×480. Namun untuk meningkatkan kinerja pada computer resource pada computer harus disediakan lebih tinggi.
 
-	Virtualbox adalah software gratis milik Oracle yang fungsi utamanya adalah mem-visualisasi-kan sebuah atau banyak Sistem Operasi (OS) di dalam Sistem Operasi utama kita. Misalnya anda memiliki sistem operasi windows namun ingin melakukan penelitian pada linux. Untuk menginstalasi dual boot perlu usaha sedikit extra, sedangkan dengan menggunakan VirtualBox, linux anda akan berjalan di dalam windows sehingga anda dapat sekaligus menggunakan windows.
+##3.  Oracle VM VirtualBox
 
-###4.  VMWare Workstation
-	
-    VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
+Virtualbox adalah software gratis milik Oracle yang fungsi utamanya adalah mem-visualisasi-kan sebuah atau banyak Sistem Operasi (OS) di dalam Sistem Operasi utama kita. Misalnya anda memiliki sistem operasi windows namun ingin melakukan penelitian pada linux. Untuk menginstalasi dual boot perlu usaha sedikit extra, sedangkan dengan menggunakan VirtualBox, linux anda akan berjalan di dalam windows sehingga anda dapat sekaligus menggunakan windows.
 
+##4.  VMWare Workstation 
+VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
 
-###5.	Wordpress
+##5. Wordpress
 
-	WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
+WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
 
-	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2.
+Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2.
 
-###6.	WPscan
+##6.	WPscan
 
-	WPScan adalah scanner keamanan yang memeriksa keamanan WordPress menggunakan metode “black box”. Fitur utama: pencacah username, multithreaded password bruteforcing, pencacah versi plugin WordPress dan pencacahan kerentanan sistem. Jika anda memiliki website menggunakan Wordpress, sangat disarankan untuk menyerang website anda sendiri dan kemudian melakukan perbaikan terhadap website anda sebelum hacker asli yang melakukannya.
+WPScan adalah scanner keamanan yang memeriksa keamanan WordPress menggunakan metode “black box”. Fitur utama: pencacah username, multithreaded password bruteforcing, pencacah versi plugin WordPress dan pencacahan kerentanan sistem. Jika anda memiliki website menggunakan Wordpress, sangat disarankan untuk menyerang website anda sendiri dan kemudian melakukan perbaikan terhadap website anda sebelum hacker asli yang melakukannya.
 
-###7.	sqlmap
+##7.	sqlmap
 
-	sqlmap adalah tools opensource yang mendeteksi dan melakukan exploit pada bug SQL injection secara otomatis. Dengan melakukan serangan SQL injection seorang attacker dapat mengambil alih serta memanipulasi sebuah database di dalam sebuah server.
+sqlmap adalah tools opensource yang mendeteksi dan melakukan exploit pada bug SQL injection secara otomatis. Dengan melakukan serangan SQL injection seorang attacker dapat mengambil alih serta memanipulasi sebuah database di dalam sebuah server.
 
 #C. Instalasi Wordpress pada Ubuntu Server
 
-1. Update Ubuntu Server
-	Pastikan ubuntu server yang akan digunakan untuk menginstall telah terupdate dengan menggunakan syntax
+##1. Update Ubuntu Server
+
+Pastikan ubuntu server yang akan digunakan untuk menginstall telah terupdate dengan menggunakan syntax
     
-    `sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove`
+`sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove`
     
     [![1.png](https://s12.postimg.org/5q2xee01p/image.png)](https://postimg.org/image/vlmnxl1vd/)
     
-2. Install Apache2
-	Install apache2 sebagai web server sehingga client dapat mengakses wordpress melalui web browser
+##2. Install Apache2 
+
+Install apache2 sebagai web server sehingga client dapat mengakses wordpress melalui web browser
     
-    `sudo apt-get install apache2`
+`sudo apt-get install apache2`
     
     [![2.png](https://s12.postimg.org/76efwj2yl/image.png)](https://postimg.org/image/9aysxm4l5/)
     
