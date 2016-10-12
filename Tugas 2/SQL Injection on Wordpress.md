@@ -48,10 +48,16 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove`
     
+    [![1.png](https://s12.postimg.org/5q2xee01p/image.png)](https://postimg.org/image/vlmnxl1vd/)
+    
 2. Install Apache2
 	Install apache2 sebagai web server sehingga client dapat mengakses wordpress melalui web browser
     
     `sudo apt-get install apache2`
+    
+    [![2.png](https://s12.postimg.org/76efwj2yl/image.png)](https://postimg.org/image/9aysxm4l5/)
+    
+    [![3.png](https://s12.postimg.org/xfzifbovx/image.png)](https://postimg.org/image/kbty2mwu1/)
     
 3. Install MySql
 	Install mySql sebagai database untuk menyimpah data yang dimiliki oleh wordpress
@@ -138,7 +144,7 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `service restrart apache2`
     
-10. A
+10. Konfigurasi Wordpress melalui Browser
 
 #D. Instalasi Wordpress pada Kali Linux
 
