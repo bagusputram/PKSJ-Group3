@@ -8,51 +8,53 @@ Untuk uji coba kali ini akan dilakukan pada wordpress(local) dengan beberapa plu
 
 Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sistem operasi Kali Linux. Website yang akan diuji yaitu wordpress yang diinstal pada local dengan beberapa plugin. Piranti yang digunakan untuk uji SQL injection antara lain WPscan, sqlmap dan beberapa tool lainnya. Mengenai piranti yang akan digunakan akan dijelaskan berikut ini :
 
-##1.  Kali Linux
+1.  Kali Linux
 
-Kali Linux adalah salah satu distribusi Linux tingkat lanjut untuk Penetration Testing dan audit keamanan. Distro ini dulunya adalah distro Backtrack, yang kemudian memutuskan mengganti nama distronya tersebut menjadi Kali Linux di versi terbarunya. Kali Linux ini akan dijadikan sebagai standarisasi distro Linux yang digunakan untuk percobaan penetrasi.
+	Kali Linux adalah salah satu distribusi Linux tingkat lanjut untuk Penetration Testing dan audit keamanan. Distro ini dulunya adalah distro Backtrack, yang kemudian memutuskan mengganti nama distronya tersebut menjadi Kali Linux di versi terbarunya. Kali Linux ini akan dijadikan sebagai standarisasi distro Linux yang digunakan untuk percobaan penetrasi.
 
-##2.  Ubuntu Server
-Linux Ubuntu Server adalah system operasi turunan dari Linux Ubuntu yang di desain khusus dengan kernel yang telah dikustomisasi untuk bekerja sebagai system operasi server. Kernel Linux Ubuntu Server di desain khusus untuk bisa bekerja dengan lebih dari satu proses (multiprocessor) dengan dukungan NUMA pada 100Hz internal timer frequency dan menggunakan pennjadwalan deadline I/O.
+2.  Ubuntu Server
 
-Linux Ubuntu Server memiliki lisensi open source dan gratis serta merupakan turunan dari distro linux debian sehingga memiliki keamanan yang cukup tinggi. Linux Ubuntu Server ini mempunyai kebutuhan minimum atau resource yang harus dipenuhi diantaranya adalah processor 300 MHz, Memory 64MB, Harddisk 500MB dan VGA 640×480. Namun untuk meningkatkan kinerja pada computer resource pada computer harus disediakan lebih tinggi.
+	Linux Ubuntu Server adalah system operasi turunan dari Linux Ubuntu yang di desain khusus dengan kernel yang telah dikustomisasi untuk bekerja sebagai system operasi server. Kernel Linux Ubuntu Server di desain khusus untuk bisa bekerja dengan lebih dari satu proses (multiprocessor) dengan dukungan NUMA pada 100Hz internal timer frequency dan menggunakan pennjadwalan deadline I/O.
 
-##3.  Oracle VM VirtualBox
+	Linux Ubuntu Server memiliki lisensi open source dan gratis serta merupakan turunan dari distro linux debian sehingga memiliki keamanan yang cukup tinggi. Linux Ubuntu Server ini mempunyai kebutuhan minimum atau resource yang harus dipenuhi diantaranya adalah processor 300 MHz, Memory 64MB, Harddisk 500MB dan VGA 640×480. Namun untuk meningkatkan kinerja pada computer resource pada computer harus disediakan lebih tinggi.
 
-Virtualbox adalah software gratis milik Oracle yang fungsi utamanya adalah mem-visualisasi-kan sebuah atau banyak Sistem Operasi (OS) di dalam Sistem Operasi utama kita. Misalnya anda memiliki sistem operasi windows namun ingin melakukan penelitian pada linux. Untuk menginstalasi dual boot perlu usaha sedikit extra, sedangkan dengan menggunakan VirtualBox, linux anda akan berjalan di dalam windows sehingga anda dapat sekaligus menggunakan windows.
+3.  Oracle VM VirtualBox
 
-##4.  VMWare Workstation 
-VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
+	Virtualbox adalah software gratis milik Oracle yang fungsi utamanya adalah mem-visualisasi-kan sebuah atau banyak Sistem Operasi (OS) di dalam Sistem Operasi utama kita. Misalnya anda memiliki sistem operasi windows namun ingin melakukan penelitian pada linux. Untuk menginstalasi dual boot perlu usaha sedikit extra, sedangkan dengan menggunakan VirtualBox, linux anda akan berjalan di dalam windows sehingga anda dapat sekaligus menggunakan windows.
 
-##5. Wordpress
+4.  VMWare Workstation 
+	
+    VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
 
-WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
+5. Wordpress
 
-Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2.
+	WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
 
-##6.	WPscan
+	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2.
 
-WPScan adalah scanner keamanan yang memeriksa keamanan WordPress menggunakan metode “black box”. Fitur utama: pencacah username, multithreaded password bruteforcing, pencacah versi plugin WordPress dan pencacahan kerentanan sistem. Jika anda memiliki website menggunakan Wordpress, sangat disarankan untuk menyerang website anda sendiri dan kemudian melakukan perbaikan terhadap website anda sebelum hacker asli yang melakukannya.
+6.	WPscan
 
-##7.	sqlmap
+	WPScan adalah scanner keamanan yang memeriksa keamanan WordPress menggunakan metode “black box”. Fitur utama: pencacah username, multithreaded password bruteforcing, pencacah versi plugin WordPress dan pencacahan kerentanan sistem. Jika anda memiliki website menggunakan Wordpress, sangat disarankan untuk menyerang website anda sendiri dan kemudian melakukan perbaikan terhadap website anda sebelum hacker asli yang melakukannya.
 
-sqlmap adalah tools opensource yang mendeteksi dan melakukan exploit pada bug SQL injection secara otomatis. Dengan melakukan serangan SQL injection seorang attacker dapat mengambil alih serta memanipulasi sebuah database di dalam sebuah server.
+7.	sqlmap
+
+	sqlmap adalah tools opensource yang mendeteksi dan melakukan exploit pada bug SQL injection secara otomatis. Dengan melakukan serangan SQL injection seorang attacker dapat mengambil alih serta memanipulasi sebuah database di dalam sebuah server.
 
 #C. Instalasi Wordpress pada Ubuntu Server
 
-##1. Update Ubuntu Server
+1. Update Ubuntu Server
 
-Pastikan ubuntu server yang akan digunakan untuk menginstall telah terupdate dengan menggunakan syntax
+	Pastikan ubuntu server yang akan digunakan untuk menginstall telah terupdate dengan menggunakan syntax
     
-`sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove`
+	`sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove`
     
     [![1.png](https://s12.postimg.org/5q2xee01p/image.png)](https://postimg.org/image/vlmnxl1vd/)
     
-##2. Install Apache2 
+2. Install Apache2 
 
-Install apache2 sebagai web server sehingga client dapat mengakses wordpress melalui web browser
+	Install apache2 sebagai web server sehingga client dapat mengakses wordpress melalui web browser
     
-`sudo apt-get install apache2`
+	`sudo apt-get install apache2`
     
     [![2.png](https://s12.postimg.org/76efwj2yl/image.png)](https://postimg.org/image/9aysxm4l5/)
     
@@ -219,40 +221,40 @@ Install apache2 sebagai web server sehingga client dapat mengakses wordpress mel
 
 	Untuk menjalankan Wordpress dibutuhkan sebuah webserver. Webserver yang akan digunakan disini adalah XAMPP karena telah mengandung SQL Server sebagai database server. Adapun langkah - langkah yang perlu dilakukan untuk instalasi XAMMPP antara lain :
 
-		1. Download XAMPP
-			Download XAMPP pada www.apachefriends.org/download.html. Download versi terbaru dari XAMPP untuk linux pada halaman tersebut.
+	1. Download XAMPP
+		Download XAMPP pada www.apachefriends.org/download.html. Download versi terbaru dari XAMPP untuk linux pada halaman tersebut.
 
-			<Gambar : install XAMPP\1>
+		[![1. download XAMPP.png](https://s14.postimg.org/quscjmqtd/1_download_XAMPP.png)](https://postimg.org/image/5l4q8sail/)
 
-		2. Chmod Installer
-			Ubah permission file installer dengan cara mengetikkan command berikut pada terminal.
+	2. Chmod Installer
+		Ubah permission file installer dengan cara mengetikkan command berikut pada terminal.
 
-			chmod +x xampp-linux-x64-7.0.9-1-installer.run
+		'chmod +x xampp-linux-x64-7.0.9-1-installer.run'
 
-			<Gambar : install XAMPP\2>
+		[![2. chmod installer XAMPP.png](https://s9.postimg.org/5uttl9o3z/2_chmod_installer_XAMPP.png)](https://postimg.org/image/r4hfw44ej/)
 
-		3. Run Installer
-			Run installer XAMPP dengan cara mengetikkan command berikut pada terminal.
+	3. Run Installer
+		Run installer XAMPP dengan cara mengetikkan command berikut pada terminal.
 
-			./xampp-linux-x64-7.0.9-1-installer.run
+		./xampp-linux-x64-7.0.9-1-installer.run
 
-			<Gambar : install XAMPP\3>
+		[![3. install XAMPP.png](https://s15.postimg.org/bnsft2xq3/3_install_XAMPP.png)](https://postimg.org/image/kita3lmif/)
 
-		4. Proses Instalasi
-			Ikuti petunjuk instalasi yang tersedia dengan mengklik next.
+	4. Proses Instalasi
+		Ikuti petunjuk instalasi yang tersedia dengan mengklik next.
 
-			<Gambar : install XAMPP\4>
+		[![4. Install XAMPP progress.png](https://s21.postimg.org/l3ep22w6f/4_Install_XAMPP_progress.png)](https://postimg.org/image/atca2u6ar/)
+		
+        [![5. Install XAMPP progress 1.png](https://s17.postimg.org/k3t4iqfkf/5_Install_XAMPP_progress_1.png)](https://postimg.org/image/u145bsn63/)
+		
+        [![6. Install XAMPP progress 2.png](https://s21.postimg.org/ruggpsa2v/6_Install_XAMPP_progress_2.png)](https://postimg.org/image/jc70lg3k3/)
+		
+        [![7. Install XAMPP progress 3.png](https://s18.postimg.org/7ap7lram1/7_Install_XAMPP_progress_3.png)](https://postimg.org/image/hkrml00hh/)
 
-			<Gambar : install XAMPP\5>
+		[![8. Install selesai.png](https://s16.postimg.org/q0jpv54qt/8_Install_selesai.png)](https://postimg.org/image/gsrhefxoh/)
 
-			<Gambar : install XAMPP\6>
-
-			<Gambar : install XAMPP\7>
-
-			<Gambar : install XAMPP\8>
-
-		5. Jalankan semua server
-			Setelah XAMPP berhasil terinstall maka akan muncul UI XAMPP. Jalankan semua server dengan mengklik Start All pada tab Manage Servers
+	5. Jalankan semua server
+		Setelah XAMPP berhasil terinstall maka akan muncul UI XAMPP. Jalankan semua server dengan mengklik Start All pada tab Manage Servers
 
 			<Gambar : install XAMPP\9>
 
@@ -261,54 +263,52 @@ Install apache2 sebagai web server sehingga client dapat mengakses wordpress mel
 	Sebelum instalasi wordpress kita perlu menyiapkan database yang akan digunakan untuk wordpress tersebut. Selain itu kita perlu menyiapkan file wordpress yang akan diinstall. Adapun langkah - langkah installasinya adalah sebagai berikut :
 
 	1. Download Wordpress
-		Download wordpress dengan format .zip pada 
+		Download wordpress dengan format .zip pada https://wordpress.org/download/
 
-		https://wordpress.org/download/
-
-		<Gambar : install Wordpress\1>
+			<Gambar : install Wordpress\1>
 
 	2. Persiapkan Database
 		Buka localhost/phpmyadmin pada browser kemudian klik new. Isikan nama database sesuai yang diinginkan. Disini database akan dinamai dengan nama "wp". Kemudian klik go.
 
-		<Gambar : install Wordpress\2>
+			<Gambar : install Wordpress\2>
 
-		<Gambar : install Wordpress\3>
+			<Gambar : install Wordpress\3>
 
 	3. Persiapan Instalasi
 		Pindahkan file installer wordpress(.zip) pada folder Download ke /opt/lampp/htdocs. Kemudian extract file .zip tersebut.
 
-		<Gambar : install Wordpress\4>
+			<Gambar : install Wordpress\4>
 
 	4. Mulai Instalasi
 		Buka localhost/wordpress pada browser. Kemudian klik let's go.
 
-		<Gambar : install Wordpress\5>
+			<Gambar : install Wordpress\5>
 
 	5. Melakukan Koneksi dengan Database
 		Setelah mengklik let's go, anda akan dimintai database yang akan digunakan pada wordpress ini. Isikan form sesuai dengan database yang telah dibuat. Password dapat dikosongkan jika memang tidak terdapat password pada database.
 
-		<Gambar : install Wordpress\6>
+			<Gambar : install Wordpress\6>
 
 	6. Wp-Config
 		Jika diminta membuat file wp-config.php, copykan text yang disediakan kemudian buat file baru pada /opt/lampp/htdocs/wordpress dengan nama wp-config.php . Setelah selesai klik "Run the install".
 
-		<Gambar : install Wordpress\7>
+			<Gambar : install Wordpress\7>
 
-		<Gambar : install Wordpress\8>
+			<Gambar : install Wordpress\8>
 
 	7. Site Informastion
 		Setelah itu isikan form Informasi mengenai site wordpress anda. Kemudian klik "Install WorPress".
 
-		<Gambar : install Wordpress\9>
+			<Gambar : install Wordpress\9>
 
 	8. Install Success!
 		Ketika Instalasi selesai akan menampilkan halaman seperti berikut :
 
-		<Gambar : install Wordpress\10>
+			<Gambar : install Wordpress\10>
 
 		Kemudian anda bisa langsung mengakses dashboard dengan login sesuai username dan password yang telah diisikan tadi.
 
-		<Gambar : install Wordpress\11>
+			<Gambar : install Wordpress\11>
 
 3. Instalasi Plugin
 	Plugin yang akan diuji disini antara lain Worpress Video Player v1.5.18, LeagueManager v4.1.1, ... ,... . Cara instalasi plugin semua sama pada wordpress. Adapun cara instalasi pluginnya yaitu :
@@ -318,38 +318,38 @@ Install apache2 sebagai web server sehingga client dapat mengakses wordpress mel
 
 		https://wordpress.org/plugins/player/
 
-		<Gambar : install plugin\1>
+			<Gambar : install plugin\1>
 
 		Untuk plugin LeagueManage 4.1.1 dapat di download di :
 
 		https://wordpress.org/plugins/leaguemanager/
 
-		<Gambar : install plugin\6>
+			<Gambar : install plugin\6>
 
 	2. Instalasi
 		Untuk memulai install plugin, buka dashboard wordpress kemudian klik Plugins - Add New.
 
-		<Gambar : install plugin\2>
+			<Gambar : install plugin\2>
 
 		Kemudian klik Upload Plugin
 
-		<Gambar : install plugin\3>
+			<Gambar : install plugin\3>
 
 	3. Pilih plugin
 		Pilih plugin yang akan diinstal pada directory Downloads. Instalasi plugin sebaiknya dilakukan satu per satu.
 
-		<Gambar : install plugin\4>
+			<Gambar : install plugin\4>
 
-		<Gambar : install plugin\9>
+			<Gambar : install plugin\9>
 
 		Kemudian klik Install Now
 
 	4. Finish Install
 		Ketika selesai instalasi klik Activate Plugin.
 
-		<Gambar : install plugin\5>
+			<Gambar : install plugin\5>
 
-		<Gambar : install plugin\10>
+			<Gambar : install plugin\10>
 
 	5. Lakukan langkah yang sama untuk semua Plugin yang ingin diinstal
 
