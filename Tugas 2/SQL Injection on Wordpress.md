@@ -200,6 +200,19 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     `service restrart apache2`
     
 10. Konfigurasi Wordpress melalui Browser
+	Buka browser pada client lalu akses ip dari web server yang telah terinstall wordpress
+    
+    [![33.png](https://s12.postimg.org/64i1j7oal/image.png)](https://postimg.org/image/ci74mgt6h/)
+    
+    [![34.png](https://s12.postimg.org/lr9awl22l/image.png)](https://postimg.org/image/vbsxjgreh/)
+    
+    [![35.png](https://s12.postimg.org/5hj4torel/image.png)](https://postimg.org/image/lfrujtlmh/)
+    
+    Setelah melakukan instalasi awal maka pengguna dapat mengakses dashboard dari wordpress
+    
+    [![36.png](https://s12.postimg.org/rhzhaba2l/image.png)](https://postimg.org/image/ahgl1mx15/)
+    
+    [![37.png](https://s12.postimg.org/pep22na9p/image.png)](https://postimg.org/image/bxs3jrzy1/)
 
 #D. Instalasi Wordpress pada Kali Linux
 
