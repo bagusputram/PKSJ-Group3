@@ -365,7 +365,9 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     Buka folder plugin pada wordpress terlebih dahulu
     
     `cd /var/www/html/wp-content/plugins`
-	
+    
+	[![40.png](https://s12.postimg.org/fl7upu859/image.png)](https://postimg.org/image/cedb67np5/)
+    
     Download plugin dengan command dibawah
     
     `sudo wget http://downloads.wordpress.org/plugin/leaguemanager.3.9.1.1.zip`
@@ -375,11 +377,14 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     `sudo unzip leaguemanager.3.9.1.1.zip`
     
     Aktifkan plugin pada menu add plugin didalam dashboard pengguna
+    
 2. Video Player 1.5.16
 	
     Buka folder plugin pada wordpress terlebih dahulu
     
     `cd /var/www/html/wp-content/plugins`
+    
+    [![40.png](https://s12.postimg.org/fl7upu859/image.png)](https://postimg.org/image/cedb67np5/)
 	
     Download plugin dengan command dibawah
     
@@ -390,12 +395,15 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     `sudo unzip player.1.5.16.zip`
     
     Aktifkan plugin pada menu add plugin didalam dashboard pengguna
+    
 3. MailPoet Newsletters 2.7.2
 		
     Buka folder plugin pada wordpress terlebih dahulu
     
     `cd /var/www/html/wp-content/plugins`
-	
+    
+	[![40.png](https://s12.postimg.org/fl7upu859/image.png)](https://postimg.org/image/cedb67np5/)
+    
     Download plugin dengan command dibawah
     
     `sudo wget http://downloads.wordpress.org/plugin/wysija-newsletters.2.7.2.zip`
