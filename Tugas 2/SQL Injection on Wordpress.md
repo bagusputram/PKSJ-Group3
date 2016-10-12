@@ -58,7 +58,21 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo apt-get install mysql-server mysql-client`
     
-4. 
+4. Konfigurasi MySql
+	Setelah dilakukan penginstalan mySql dibutuhkan pengaturan mySql dengan cara sebagai berikut
+    
+    `sudo mysql_secure_installation`
+    
+    Ketika ada pertanyaan mengenai pengaturan yang ada, ikuti pengaturan seperti dibawah ini
+
+	-Enter current password for root (enter for none): Type root password
+	-Change the root password? **N**
+	-Remove anonymous users? **Y**
+	-Disallow root login remotely? **Y**
+	-Remove test database and access to it? **Y**
+	-Reload privilege tables now? **Y**
+    
+5. 
 
 #D. Instalasi Wordpress pada Kali Linux
 
