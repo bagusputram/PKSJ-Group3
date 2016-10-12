@@ -121,7 +121,14 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
     
-8. 
+8. Konfigurasi wp-config
+	Setelah dilakukan instalasi wordpress maka diperlukan konfigurasi pada wordpress agar terkoneksi dengan database server
+    
+    `sudo vi /var/www/html/wp-config.php`
+    
+    Ubah konfigurasi agar seperti gambar dibawah
+    
+9. 
 
 #D. Instalasi Wordpress pada Kali Linux
 
