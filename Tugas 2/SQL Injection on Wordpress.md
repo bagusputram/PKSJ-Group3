@@ -100,7 +100,28 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo apt-get install php5 libapache2-mod-php5 php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-sqlite php5-tidy php5-xmlrpc php5-xsl`
     
-7. 
+7. Install Wordpress
+	Jalankan command dibawah untuk mendapatkan wordpress terbaru
+    
+    `cd /tmp/ && wget http://wordpress.org/latest.tar.gz`
+    
+    Extract file yang baru saja didownload
+    
+    `tar -xvzf latest.tar.gz`
+    
+    Agar pengguna baru tidak bingung dengan tampilan index maka diharapkan user untuk mengahpus index.html
+    
+    `sudo rm /var/www/html/index.html`
+    
+    Lalu copy semua file yang telah diextract tadi ke dalam folder web server
+    
+    `sudo mv wordpress/* /var/www/html/`
+    
+    Copy pengaturan wp-config yang telah ada
+    
+    `sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
+    
+8. 
 
 #D. Instalasi Wordpress pada Kali Linux
 
