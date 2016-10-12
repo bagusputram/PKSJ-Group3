@@ -27,17 +27,17 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
 
 
-###3.	Wordpress
+###5.	Wordpress
 
 	WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
 
-	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.18, leaguemanager 4.1.1, (nanti tambahin)
+	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2
 
-###4.	WPscan
+###6.	WPscan
 
 	WPScan adalah scanner keamanan yang memeriksa keamanan WordPress menggunakan metode “black box”. Fitur utama: pencacah username, multithreaded password bruteforcing, pencacah versi plugin WordPress dan pencacahan kerentanan sistem. Jika anda memiliki website menggunakan Wordpress, sangat disarankan untuk menyerang website anda sendiri dan kemudian melakukan perbaikan terhadap website anda sebelum hacker asli yang melakukannya.
 
-###5.	sqlmap
+###7.	sqlmap
 
 	sqlmap adalah tools opensource yang mendeteksi dan melakukan exploit pada bug SQL injection secara otomatis. Dengan melakukan serangan SQL injection seorang attacker dapat mengambil alih serta memanipulasi sebuah database di dalam sebuah server.
 
