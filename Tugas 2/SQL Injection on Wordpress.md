@@ -31,7 +31,7 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 
 	WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
 
-	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2
+	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2.
 
 ###6.	WPscan
 
@@ -41,14 +41,21 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 
 	sqlmap adalah tools opensource yang mendeteksi dan melakukan exploit pada bug SQL injection secara otomatis. Dengan melakukan serangan SQL injection seorang attacker dapat mengambil alih serta memanipulasi sebuah database di dalam sebuah server.
 
-###6.	Ubuntu Server
+#C. Instalasi Wordpress pada Ubuntu Server
 
-	
+1. Update Ubuntu Server
+	Pastikan ubuntu server yang akan digunakan untuk menginstall telah terupdate dengan menggunakan syntax
+    
+    `sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove`
+    
+2. Install Apache2
+	Install apache2 sebagai web server sehingga client dapat mengakses wordpress melalui web browser
+    
+    `sudo apt-get install apache2`
+    
+3. 
 
-
-7.	<monggo ditambahkan>
-
-#C. Instalasi
+#D. Instalasi Wordpress pada Kali Linux
 
 1. Instalasi XAMPP
 
@@ -192,7 +199,7 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	
 	Karena sistem operasi yang digunakan adalah Kali Linux, maka sqlmap dan WPscan telah terinstall. Untuk masing - masing tool mungkin diperlukan update database dari tool tersebut. Update akan dilakukan secara otomatis ketika kita menjalankan perintah pada tool tersebut.
 
-#D. Uji SQL Injection
+#E. Uji SQL Injection
 	
 	1. Pengujian dengan WPscan
 
@@ -261,7 +268,7 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 			Nama plugin yang terdapat tanda seru berwarna merahnya merupakan plugin yang vulnerable.
 
 
-#E. Kesimpulan dan Saran
+#F. Kesimpulan dan Saran
 
 
 
