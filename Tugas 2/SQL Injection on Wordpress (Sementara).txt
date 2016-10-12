@@ -130,3 +130,49 @@ C. Langkah Uji dan Instalasi
 
 		<Gambar : install Wordpress\11>
 
+3. Instalasi Plugin
+	Plugin yang akan diuji disini antara lain Worpress Video Player v1.5.18, LeagueManager v4.1.1, ... ,... . Cara instalasi plugin semua sama pada wordpress. Adapun cara instalasi pluginnya yaitu :
+
+	1. Download Plugin 
+		Untuk plugin video player 1.5.18 dapat di download di :
+
+		https://wordpress.org/plugins/player/
+
+		<Gambar : install plugin\1>
+
+		Untuk plugin LeagueManage 4.1.1 dapat di download di :
+
+		https://wordpress.org/plugins/leaguemanager/
+
+		<Gambar : install plugin\6>
+
+	2. Instalasi
+		Untuk memulai install plugin, buka dashboard wordpress kemudian klik Plugins - Add New.
+
+		<Gambar : install plugin\2>
+
+		Kemudian klik Upload Plugin
+
+		<Gambar : install plugin\3>
+
+	3. Pilih plugin
+		Pilih plugin yang akan diinstal pada directory Downloads. Instalasi plugin sebaiknya dilakukan satu per satu.
+
+		<Gambar : install plugin\4>
+
+		<Gambar : install plugin\9>
+
+		Kemudian klik Install Now
+
+	4. Finish Install
+		Ketika selesai instalasi klik Activate Plugin.
+
+		<Gambar : install plugin\5>
+
+		<Gambar : install plugin\10>
+
+	5. Lakukan langkah yang sama untuk semua Plugin yang ingin diinstal
+
+
+
+
