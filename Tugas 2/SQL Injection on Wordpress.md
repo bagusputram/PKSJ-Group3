@@ -64,18 +64,36 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo apt-get install mysql-server mysql-client`
     
+    [![4.png](https://s12.postimg.org/bi31lj9vh/image.png)](https://postimg.org/image/ckd842sop/)
+    
+    [![6.png](https://s12.postimg.org/gjafmwhbx/image.png)](https://postimg.org/image/erhgrzxyx/)
+    
 4. Konfigurasi MySql
 	Setelah dilakukan penginstalan mySql dibutuhkan pengaturan mySql dengan cara sebagai berikut
     
     `sudo mysql_secure_installation`
     
+    [![8.png](https://s12.postimg.org/q6dxwmabh/image.png)](https://postimg.org/image/71aomuvnd/)
+    
     Ketika ada pertanyaan mengenai pengaturan yang ada, ikuti pengaturan seperti dibawah ini
 
 	-Enter current password for root (enter for none): Type root password
+    
+    [![10.png](https://s12.postimg.org/cdzj0zjjx/image.png)](https://postimg.org/image/kw8z5bq2h/)
+    
 	-Change the root password? **N**
 	-Remove anonymous users? **Y**
+    
+    [![11.png](https://s12.postimg.org/f9h7llcxp/image.png)](https://postimg.org/image/3kd7xmlyx/)
+    
 	-Disallow root login remotely? **Y**
+    
+    [![12.png](https://s12.postimg.org/h2k49wy4d/image.png)](https://postimg.org/image/uw8gyyqpl/)
+    
 	-Remove test database and access to it? **Y**
+    
+    [![13.png](https://s12.postimg.org/xeu5zncfx/image.png)](https://postimg.org/image/s3f9exqd5/)
+    
 	-Reload privilege tables now? **Y**
     
 5. Konfigurasi Database
