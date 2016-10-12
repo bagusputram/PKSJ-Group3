@@ -391,7 +391,21 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     Aktifkan plugin pada menu add plugin didalam dashboard pengguna
 3. MailPoet Newsletters 2.7.2
-
+		
+    Buka folder plugin pada wordpress terlebih dahulu
+    
+    `cd /var/www/html/wp-content/plugins`
+	
+    Download plugin dengan command dibawah
+    
+    `sudo wget http://downloads.wordpress.org/plugin/wysija-newsletters.2.7.2.zip`
+    
+    Lalu extract file yang telah didownload tersebut
+    
+    `sudo unzip wysija-newsletters.2.7.2.zip`
+    
+    Aktifkan plugin pada menu add plugin didalam dashboard pengguna
+    
 #F. Instalasi Plugin pada Wordpress Kali Linux
 
 #G. Uji SQL Injection
