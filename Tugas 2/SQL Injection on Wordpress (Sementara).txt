@@ -186,7 +186,66 @@ D. Uji SQL Injection
 
 		Hasil Pengujian :
 
-		
+		a. Fullscan Wordpress
+			Fullscan dilakukan dengan command.
+
+			wpscan --url localhost/wordpress
+
+			Hasil :
+
+			<Gambar : hasil uji WP Scan\1>
+
+			<Gambar : hasil uji WP Scan\2>
+
+			<Gambar : hasil uji WP Scan\3>
+
+		b. Mencari Username
+			Untuk scanning username dilakukan dengan command.
+
+			wpscan --url localhost/wordpress --enumerate u
+
+			Hasil :
+
+			<Gambar : hasil uji WP Scan\4>
+
+		c. Brute Force password 
+			Untuk melakukan brute force password, terlebih dahulu buatlah file yang berisikan list password yang kira - kira merupakan password user wordpress dengan cara :
+
+			nano password.txt
+
+			<Gambar : hasil uji WP Scan\5>
+
+			Kemudian isikan list password perkiraan.
+
+			<Gambar : hasil uji WP Scan\6>
+
+			Setelah file password disiapkan, kemudian ketikkan command berikut :
+
+			wpscan --url localhost/wordpress --wordlist ~/password.txt --thread 10
+
+			<Gambar : hasil uji WP Scan\7>
+
+			Hasil :
+
+			<Gambar : hasil uji WP Scan\8>
+
+			Jika ada password yang cocok maka bagian password akan terisi seperti gambar diatas.
+
+		d. Scan Vulnerable Plugin
+			Untuk melakukan scan pada plugin hanya perlu dilakukan dengan mengtikkan command berikut :
+
+			wpscan --url localhost/wordpress --enumerate p
+
+			<Gambar : hasil uji WP Scan\9>
+
+			Hasil :
+
+			<Gambar : hasil uji WP Scan\10>
+
+			<Gambar : hasil uji WP Scan\11>
+
+			Nama plugin yang terdapat tanda seru berwarna merahnya merupakan plugin yang vulnerable.
+
 
 E. Kesimpulan dan Saran
 
