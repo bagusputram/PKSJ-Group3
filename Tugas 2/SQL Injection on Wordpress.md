@@ -134,9 +134,13 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo apt-get install php5 libapache2-mod-php5`
     
+    [![14.png](https://s12.postimg.org/b46azof5p/image.png)](https://postimg.org/image/8zlxyldix/)
+    
     Lalu jalankan command dibawah untuk menginstall plugin untuk php5
     
     `sudo apt-get install php5 libapache2-mod-php5 php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-sqlite php5-tidy php5-xmlrpc php5-xsl`
+    
+    [![16.png](https://s12.postimg.org/4g9pd2vnh/image.png)](https://postimg.org/image/ltjzrxqyh/)
     
 7. Install Wordpress
 	Jalankan command dibawah untuk mendapatkan wordpress terbaru
