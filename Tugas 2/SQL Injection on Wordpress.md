@@ -72,7 +72,30 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	-Remove test database and access to it? **Y**
 	-Reload privilege tables now? **Y**
     
-5. 
+5. Konfigurasi Database
+	Setelah dilakukan konfigurasi pada mySql maka dibutuhkan konfigurasi database dengan cara sebagai berikut
+    
+    `mysql -u root -p`
+    
+    Buat database dengan nama **wpdb**;
+    
+    `CREATE DATABASE wpdb`
+    
+    Membuat pengguna database dengan nama **wpuser**
+    
+    `CREATE USER wpuser@localhost IDENTIFIED BY 'new_password_here';`
+    
+    Lalu buat hak akses terhadap user yang baru saja dibuat
+    
+    `GRANT ALL ON wpdb.* to wpuser@localhost;`
+    
+    Terakhir jalankan command agar memperbaharui pengaturan database
+    
+    `FLUSH PRIVILEGES;`
+    
+    `EXIT`
+    
+6. 
 
 #D. Instalasi Wordpress pada Kali Linux
 
