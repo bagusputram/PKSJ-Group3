@@ -358,7 +358,22 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	
 	Karena sistem operasi yang digunakan adalah Kali Linux, maka sqlmap dan WPscan telah terinstall. Untuk masing - masing tool mungkin diperlukan update database dari tool tersebut. Update akan dilakukan secara otomatis ketika kita menjalankan perintah pada tool tersebut.
 
-#E. Uji SQL Injection
+#E. Instalasi Plugin pada Wordpress Ubuntu Server
+
+1. Leagumanager 3.9.11
+	Buka folder plugin pada wordpress terlebih dahulu
+    `cd /var/www/html/wp-content/plugins`
+	Download plugin dengan command dibawah
+    `sudo wget http://downloads.wordpress.org/plugin/leaguemanager.3.9.1.1.zip`
+    Lalu extract file yang telah didownload tersebut
+    `sudo unzip leaguemanager.3.9.1.1.zip`
+    Aktifkan plugin pada menu add plugin didalam dashboard pengguna
+2. Video Player 1.5.16
+3. MailPoet Newsletters 2.7.2
+
+#F. Instalasi Plugin pada Wordpress Kali Linux
+
+#G. Uji SQL Injection
 	
 	1. Pengujian dengan WPscan
 
@@ -427,7 +442,7 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 			Nama plugin yang terdapat tanda seru berwarna merahnya merupakan plugin yang vulnerable.
 
 
-#F. Kesimpulan dan Saran
+#H. Kesimpulan dan Saran
 
 
 
