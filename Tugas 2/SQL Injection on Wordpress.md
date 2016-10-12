@@ -435,17 +435,17 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	Hasil Pengujian :
 
 	- Fullscan Wordpress
-	  	Fullscan dilakukan dengan command.
+		Fullscan dilakukan dengan command.
 
 		wpscan --url localhost/wordpress
 
 		Hasil :
 
-			<Gambar : hasil uji WP Scan\1>
-
-			<Gambar : hasil uji WP Scan\2>
-
-			<Gambar : hasil uji WP Scan\3>
+		[![1. Scan full 1.png](https://s16.postimg.org/hbwcecypx/1_Scan_full_1.png)](https://postimg.org/image/qjokv25s1/)
+		
+        [![2. Scan full 2.png](https://s21.postimg.org/4kiq1za8n/2_Scan_full_2.png)](https://postimg.org/image/of4ro3pg3/)
+		
+        [![3. Scan full 3.png](https://s12.postimg.org/8cmnul7fh/3_Scan_full_3.png)](https://postimg.org/image/e0sylhbrt/)
 
 	- Mencari Username
 		Untuk scanning username dilakukan dengan command.
@@ -454,28 +454,28 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 
 		Hasil :
 
-			<Gambar : hasil uji WP Scan\4>
+		[![4. Scan Username.png](https://s18.postimg.org/5earvnqft/4_Scan_Username.png)](https://postimg.org/image/4orzjapw5/)
 
 	- Brute Force password 
 		Untuk melakukan brute force password, terlebih dahulu buatlah file yang berisikan list password yang kira - kira merupakan password user wordpress dengan cara :
 
 		nano password.txt
 
-			<Gambar : hasil uji WP Scan\5>
+		[![5. buat list password.png](https://s12.postimg.org/w55t3dj7h/5_buat_list_password.png)](https://postimg.org/image/dplc5z52x/)
 
 		Kemudian isikan list password perkiraan.
 
-			<Gambar : hasil uji WP Scan\6>
+		[![6. buat list password 2.png](https://s12.postimg.org/sfr6338gt/6_buat_list_password_2.png)](https://postimg.org/image/ux2xacsd5/)
 
 		Setelah file password disiapkan, kemudian ketikkan command berikut :
 
 		wpscan --url localhost/wordpress --wordlist ~/password.txt --thread 10
 
-			<Gambar : hasil uji WP Scan\7>
+		[![7. brute force password pada seluruh username ya.png](https://s11.postimg.org/3v9va01n7/7_brute_force_password_pada_seluruh_username_ya.png)](https://postimg.org/image/4xk1sjkgf/)
 
 		Hasil :
 
-			<Gambar : hasil uji WP Scan\8>
+		[![8. password ditemukan.png](https://s4.postimg.org/am7hfkcv1/8_password_ditemukan.png)](https://postimg.org/image/7s4c24aop/)
 
 		Jika ada password yang cocok maka bagian password akan terisi seperti gambar diatas.
 
@@ -484,13 +484,13 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 
 		wpscan --url localhost/wordpress --enumerate p
 
-			<Gambar : hasil uji WP Scan\9>
+		[![9. scan plugin.png](https://s22.postimg.org/xn8utqav5/9_scan_plugin.png)](https://postimg.org/image/726by68hp/)
 
 		Hasil :
 
-			<Gambar : hasil uji WP Scan\10>
-
-			<Gambar : hasil uji WP Scan\11>
+		[![10. hasil plugin.png](https://s9.postimg.org/g26flal6n/10_hasil_plugin.png)](https://postimg.org/image/z79ov1zuj/)
+		
+        [![11. hasil plugin 2.png](https://s21.postimg.org/bjzybfph3/11_hasil_plugin_2.png)](https://postimg.org/image/in7tr1uwj/)
 
 		Nama plugin yang terdapat tanda seru berwarna merahnya merupakan plugin yang vulnerable.
 
