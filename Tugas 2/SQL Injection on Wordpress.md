@@ -390,11 +390,17 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo wget http://downloads.wordpress.org/plugin/player.1.5.16.zip`
     
+    [![41.png](https://s12.postimg.org/5pbd3xrr1/image.png)](https://postimg.org/image/gowkfji61/)
+    
     Lalu extract file yang telah didownload tersebut
     
     `sudo unzip player.1.5.16.zip`
     
+    [![43.png](https://s12.postimg.org/6u5f9be7x/image.png)](https://postimg.org/image/4cto21ubd/)
+    
     Aktifkan plugin pada menu add plugin didalam dashboard pengguna
+    
+    [![44.png](https://s12.postimg.org/pnr86bcfx/image.png)](https://postimg.org/image/6inywjxrt/)
     
 3. MailPoet Newsletters 2.7.2
 		
