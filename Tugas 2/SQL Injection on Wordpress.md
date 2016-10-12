@@ -256,7 +256,7 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	5. Jalankan semua server
 		Setelah XAMPP berhasil terinstall maka akan muncul UI XAMPP. Jalankan semua server dengan mengklik Start All pada tab Manage Servers
 
-			<Gambar : install XAMPP\9>
+		[![9. Aktifkan semua server XAMPP.png](https://s21.postimg.org/3t4ool0pz/9_Aktifkan_semua_server_XAMPP.png)](https://postimg.org/image/lvxrfswkj/)
 
 2. Instalasi Wordpress
 	
@@ -265,50 +265,50 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	1. Download Wordpress
 		Download wordpress dengan format .zip pada https://wordpress.org/download/
 
-			<Gambar : install Wordpress\1>
+		[![1. download wordpress.png](https://s22.postimg.org/7doo2aqs1/1_download_wordpress.png)](https://postimg.org/image/m9n79w26l/)
 
 	2. Persiapkan Database
 		Buka localhost/phpmyadmin pada browser kemudian klik new. Isikan nama database sesuai yang diinginkan. Disini database akan dinamai dengan nama "wp". Kemudian klik go.
 
-			<Gambar : install Wordpress\2>
-
-			<Gambar : install Wordpress\3>
+		[![2. Persiapan Database.png](https://s18.postimg.org/o2m8on6gp/2_Persiapan_Database.png)](https://postimg.org/image/fkcskazxx/)
+		
+        [![3. Database telah siap.png](https://s18.postimg.org/5yl7kluah/3_Database_telah_siap.png)](https://postimg.org/image/3u0ujisnp/)
 
 	3. Persiapan Instalasi
 		Pindahkan file installer wordpress(.zip) pada folder Download ke /opt/lampp/htdocs. Kemudian extract file .zip tersebut.
 
-			<Gambar : install Wordpress\4>
+		[![4. Pindahkan file worpress ke opt lampp htdocs d.png](https://s13.postimg.org/gs7ktrt3b/4_Pindahkan_file_worpress_ke_opt_lampp_htdocs_d.png)](https://postimg.org/image/6uwk0plhf/)
 
 	4. Mulai Instalasi
 		Buka localhost/wordpress pada browser. Kemudian klik let's go.
 
-			<Gambar : install Wordpress\5>
+		[![5. pada browser buka localhost wordpress.png](https://s14.postimg.org/lm6yw26i9/5_pada_browser_buka_localhost_wordpress.png)](https://postimg.org/image/trp0u7ur1/)
 
 	5. Melakukan Koneksi dengan Database
 		Setelah mengklik let's go, anda akan dimintai database yang akan digunakan pada wordpress ini. Isikan form sesuai dengan database yang telah dibuat. Password dapat dikosongkan jika memang tidak terdapat password pada database.
 
-			<Gambar : install Wordpress\6>
+		[![6. Koneksi dengan database.png](https://s17.postimg.org/j66pkn7sv/6_Koneksi_dengan_database.png)](https://postimg.org/image/7tu42uz3v/)
 
 	6. Wp-Config
 		Jika diminta membuat file wp-config.php, copykan text yang disediakan kemudian buat file baru pada /opt/lampp/htdocs/wordpress dengan nama wp-config.php . Setelah selesai klik "Run the install".
 
-			<Gambar : install Wordpress\7>
-
-			<Gambar : install Wordpress\8>
+		[![7. membuat file wp-config php.png](https://s12.postimg.org/9qlnhyc2l/7_membuat_file_wp_config_php.png)](https://postimg.org/image/f20k2ny55/)
+		
+        [![8. wp-config.png](https://s18.postimg.org/8nhh161ll/8_wp_config.png)](https://postimg.org/image/8aq2uzjbp/)
 
 	7. Site Informastion
 		Setelah itu isikan form Informasi mengenai site wordpress anda. Kemudian klik "Install WorPress".
 
-			<Gambar : install Wordpress\9>
+		[![9. wordpress install info.png](https://s13.postimg.org/bd7lnpgef/9_wordpress_install_info.png)](https://postimg.org/image/49zq83ayr/)
 
 	8. Install Success!
 		Ketika Instalasi selesai akan menampilkan halaman seperti berikut :
 
-			<Gambar : install Wordpress\10>
+		[![10. install berhasil.png](https://s10.postimg.org/noj7oe6qh/10_install_berhasil.png)](https://postimg.org/image/g8jy2lj11/)
 
 		Kemudian anda bisa langsung mengakses dashboard dengan login sesuai username dan password yang telah diisikan tadi.
 
-			<Gambar : install Wordpress\11>
+		[![11. tampilan dashboard wordpress.png](https://s16.postimg.org/j03j7xd9h/11_tampilan_dashboard_wordpress.png)](https://postimg.org/image/xjao9c6e9/)
 
 3. Instalasi Plugin
 	Plugin yang akan diuji disini antara lain Worpress Video Player v1.5.18, LeagueManager v4.1.1, ... ,... . Cara instalasi plugin semua sama pada wordpress. Adapun cara instalasi pluginnya yaitu :
