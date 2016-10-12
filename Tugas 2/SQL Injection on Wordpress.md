@@ -147,9 +147,17 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `cd /tmp/ && wget http://wordpress.org/latest.tar.gz`
     
+    [![18.png](https://s12.postimg.org/7cwqdd1h9/image.png)](https://postimg.org/image/uedbj414p/)
+    
+    [![19.png](https://s12.postimg.org/w7g87fmbh/image.png)](https://postimg.org/image/yc0l8iny1/)
+    
     Extract file yang baru saja didownload
     
     `tar -xvzf latest.tar.gz`
+    
+    [![20.png](https://s12.postimg.org/cqvikwr7h/image.png)](https://postimg.org/image/5aw8z43i1/)
+    
+    [![21.png](https://s12.postimg.org/t3a5oduwt/image.png)](https://postimg.org/image/q970axsqh/)
     
     Agar pengguna baru tidak bingung dengan tampilan index maka diharapkan user untuk mengahpus index.html
     
@@ -159,9 +167,13 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `sudo mv wordpress/* /var/www/html/`
     
+    [![22.png](https://s12.postimg.org/75doulfwd/image.png)](https://postimg.org/image/e8lka7lbt/)
+    
     Copy pengaturan wp-config yang telah ada
     
     `sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
+    
+    [![28.png](https://s12.postimg.org/r7ndd862l/image.png)](https://postimg.org/image/j25bf2htl/)
     
 8. Konfigurasi wp-config
 	Setelah dilakukan instalasi wordpress maka diperlukan konfigurasi pada wordpress agar terkoneksi dengan database server
@@ -169,6 +181,8 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     `sudo vi /var/www/html/wp-config.php`
     
     Ubah konfigurasi agar seperti gambar dibawah
+    
+    [![29.png](https://s12.postimg.org/oeu5t75q5/image.png)](https://postimg.org/image/zefd4sw55/)
     
 9. Konfigurasi Permission Folder
 	Terakhir adalah merubah permission folder wordpress agar dapat dilakukan perubahan data
