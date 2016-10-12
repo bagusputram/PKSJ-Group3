@@ -188,7 +188,12 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	Terakhir adalah merubah permission folder wordpress agar dapat dilakukan perubahan data
     
     `sudo chown -R www-data:www-data /var/www/html/`
+    
+    [![30.png](https://s12.postimg.org/y0nq9hwvx/image.png)](https://postimg.org/image/jhgl833qx/)
+    
     `sudo chmod -R 755 /var/www/html/`
+    
+    [![31.png](https://s12.postimg.org/u5oxko33x/image.png)](https://postimg.org/image/6rgy8ql6h/)
     
     Lalu restart webserver apache2
     
