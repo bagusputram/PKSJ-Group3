@@ -174,6 +174,21 @@ C. Instalasi
 
 	5. Lakukan langkah yang sama untuk semua Plugin yang ingin diinstal
 
+4. Instalasi Tool SQL Injection
+	
+	Karena sistem operasi yang digunakan adalah Kali Linux, maka sqlmap dan WPscan telah terinstall. Untuk masing - masing tool mungkin diperlukan update database dari tool tersebut. Update akan dilakukan secara otomatis ketika kita menjalankan perintah pada tool tersebut.
+
+D. Uji SQL Injection
+	
+	1. Pengujian dengan WPscan
+
+		Adapun uji yang akan dilakukan adalah fullscan wordpress, mencari username dari wordpress tersebut, mencoba brute force password dan mencari plugin yang vulnerable.
+
+		Hasil Pengujian :
+
+		
+
+E. Kesimpulan dan Saran
 
 
 
