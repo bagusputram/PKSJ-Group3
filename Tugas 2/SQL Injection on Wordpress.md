@@ -101,26 +101,40 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     `mysql -u root -p`
     
+    [![23.png](https://s12.postimg.org/dx43xg4vx/image.png)](https://postimg.org/image/aq9kdtkft/)
+    
     Buat database dengan nama **wpdb**;
     
     `CREATE DATABASE wpdb`
+    
+    [![24.png](https://s12.postimg.org/kouj0atvh/image.png)](https://postimg.org/image/3obmrmgu1/)
     
     Membuat pengguna database dengan nama **wpuser**
     
     `CREATE USER wpuser@localhost IDENTIFIED BY 'new_password_here';`
     
+    [![25.png](https://s12.postimg.org/porz88zi5/image.png)](https://postimg.org/image/qr25qsibd/)
+    
     Lalu buat hak akses terhadap user yang baru saja dibuat
     
     `GRANT ALL ON wpdb.* to wpuser@localhost;`
+    
+    [![26.png](https://s12.postimg.org/7n8uag5h9/image.png)](https://postimg.org/image/clwcoz9a1/)
     
     Terakhir jalankan command agar memperbaharui pengaturan database
     
     `FLUSH PRIVILEGES;`
     
+    [![27.png](https://s12.postimg.org/tnp6r2o59/image.png)](https://postimg.org/image/slf08j5bt/)
+    
     `EXIT`
     
-6. Install php Plugin
-	Jalankan command dibawah untuk menginstall plugin untuk php5
+6. Install php dan plugin
+	Install php terlebih dahulu
+    
+    `sudo apt-get install php5 libapache2-mod-php5`
+    
+    Lalu jalankan command dibawah untuk menginstall plugin untuk php5
     
     `sudo apt-get install php5 libapache2-mod-php5 php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-sqlite php5-tidy php5-xmlrpc php5-xsl`
     
