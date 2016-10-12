@@ -128,7 +128,17 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     Ubah konfigurasi agar seperti gambar dibawah
     
-9. 
+9. Konfigurasi Permission Folder
+	Terakhir adalah merubah permission folder wordpress agar dapat dilakukan perubahan data
+    
+    `sudo chown -R www-data:www-data /var/www/html/`
+    `sudo chmod -R 755 /var/www/html/`
+    
+    Lalu restart webserver apache2
+    
+    `service restrart apache2`
+    
+10. A
 
 #D. Instalasi Wordpress pada Kali Linux
 
