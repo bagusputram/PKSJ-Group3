@@ -18,6 +18,9 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     Linux Ubuntu Server memiliki lisensi open source dan gratis serta merupakan turunan dari distro linux debian sehingga memiliki keamanan yang cukup tinggi. Linux Ubuntu Server ini mempunyai kebutuhan minimum atau resource yang harus dipenuhi diantaranya adalah processor 300 MHz, Memory 64MB, Harddisk 500MB dan VGA 640×480. Namun untuk meningkatkan kinerja pada computer resource pada computer harus disediakan lebih tinggi.
     
+###3.  Oracle VM VirtualBox
+
+	Virtualbox adalah software gratis milik Oracle yang fungsi utamanya adalah mem-visualisasi-kan sebuah atau banyak Sistem Operasi (OS) di dalam Sistem Operasi utama kita. Misalnya anda memiliki sistem operasi windows namun ingin melakukan penelitian pada linux. Untuk menginstalasi dual boot perlu usaha sedikit extra, sedangkan dengan menggunakan VirtualBox, linux anda akan berjalan di dalam windows sehingga anda dapat sekaligus menggunakan windows.
 
 ###4.  VMWare Workstation
 	
