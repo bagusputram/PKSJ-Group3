@@ -314,42 +314,38 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 	Plugin yang akan diuji disini antara lain Worpress Video Player v1.5.18, LeagueManager v4.1.1, ... ,... . Cara instalasi plugin semua sama pada wordpress. Adapun cara instalasi pluginnya yaitu :
 
 	1. Download Plugin 
-		Untuk plugin video player 1.5.18 dapat di download di :
+		Untuk plugin video player 1.5.18 dapat di download di : https://wordpress.org/plugins/player/
 
-		https://wordpress.org/plugins/player/
+		[![1. download video player.png](https://s21.postimg.org/amdb9vqif/1_download_video_player.png)](https://postimg.org/image/60h71j4z7/)
 
-			<Gambar : install plugin\1>
+		Untuk plugin LeagueManage 4.1.1 dapat di download di : https://wordpress.org/plugins/leaguemanager/
 
-		Untuk plugin LeagueManage 4.1.1 dapat di download di :
-
-		https://wordpress.org/plugins/leaguemanager/
-
-			<Gambar : install plugin\6>
+		[![6. plugin 2.png](https://s18.postimg.org/f824k0ifd/6_plugin_2.png)](https://postimg.org/image/609w3bbd1/)
 
 	2. Instalasi
 		Untuk memulai install plugin, buka dashboard wordpress kemudian klik Plugins - Add New.
 
-			<Gambar : install plugin\2>
+		[![2. buka dashboard plugin add new.png](https://s3.postimg.org/dv3il64oz/2_buka_dashboard_plugin_add_new.png)](https://postimg.org/image/kybe0sa4f/)
 
 		Kemudian klik Upload Plugin
 
-			<Gambar : install plugin\3>
+		[![3. upload plugin.png](https://s14.postimg.org/9sbzq77mp/3_upload_plugin.png)](https://postimg.org/image/w49sjl6ql/)
 
 	3. Pilih plugin
 		Pilih plugin yang akan diinstal pada directory Downloads. Instalasi plugin sebaiknya dilakukan satu per satu.
 
-			<Gambar : install plugin\4>
+		[![4. pilih plugin.png](https://s18.postimg.org/68ic696vt/4_pilih_plugin.png)](https://postimg.org/image/nlsml426t/)
 
-			<Gambar : install plugin\9>
+		[![9. pilih plugin.png](https://s16.postimg.org/ujimuqmj9/9_pilih_plugin.png)](https://postimg.org/image/4b7i5d2fl/)
 
 		Kemudian klik Install Now
 
 	4. Finish Install
 		Ketika selesai instalasi klik Activate Plugin.
 
-			<Gambar : install plugin\5>
+		[![5. activate plugin.png](https://s15.postimg.org/47b0s4uxn/5_activate_plugin.png)](https://postimg.org/image/t0kkssdxz/)
 
-			<Gambar : install plugin\10>
+		[![10. activate plugin.png](https://s14.postimg.org/fv2lhnv69/10_activate_plugin.png)](https://postimg.org/image/vgjx1m74d/)
 
 	5. Lakukan langkah yang sama untuk semua Plugin yang ingin diinstal
 
@@ -429,22 +425,21 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
     
     [![50.png](https://s12.postimg.org/5o1faipx9/image.png)](https://postimg.org/image/97nd0bsmx/)
     
-#F. Instalasi Plugin pada Wordpress Kali Linux
 
-#G. Uji SQL Injection
+#F. Uji SQL Injection
 	
-	1. Pengujian dengan WPscan
+1. Pengujian dengan WPscan
 
-		Adapun uji yang akan dilakukan adalah fullscan wordpress, mencari username dari wordpress tersebut, mencoba brute force password dan mencari plugin yang vulnerable.
+	Adapun uji yang akan dilakukan adalah fullscan wordpress, mencari username dari wordpress tersebut, mencoba brute force password dan mencari plugin yang vulnerable.
 
-		Hasil Pengujian :
+	Hasil Pengujian :
 
-		a. Fullscan Wordpress
-			Fullscan dilakukan dengan command.
+	- Fullscan Wordpress
+	  	Fullscan dilakukan dengan command.
 
-			wpscan --url localhost/wordpress
+		wpscan --url localhost/wordpress
 
-			Hasil :
+		Hasil :
 
 			<Gambar : hasil uji WP Scan\1>
 
@@ -452,52 +447,52 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 
 			<Gambar : hasil uji WP Scan\3>
 
-		b. Mencari Username
-			Untuk scanning username dilakukan dengan command.
+	- Mencari Username
+		Untuk scanning username dilakukan dengan command.
 
-			wpscan --url localhost/wordpress --enumerate u
+		wpscan --url localhost/wordpress --enumerate u
 
-			Hasil :
+		Hasil :
 
 			<Gambar : hasil uji WP Scan\4>
 
-		c. Brute Force password 
-			Untuk melakukan brute force password, terlebih dahulu buatlah file yang berisikan list password yang kira - kira merupakan password user wordpress dengan cara :
+	- Brute Force password 
+		Untuk melakukan brute force password, terlebih dahulu buatlah file yang berisikan list password yang kira - kira merupakan password user wordpress dengan cara :
 
-			nano password.txt
+		nano password.txt
 
 			<Gambar : hasil uji WP Scan\5>
 
-			Kemudian isikan list password perkiraan.
+		Kemudian isikan list password perkiraan.
 
 			<Gambar : hasil uji WP Scan\6>
 
-			Setelah file password disiapkan, kemudian ketikkan command berikut :
+		Setelah file password disiapkan, kemudian ketikkan command berikut :
 
-			wpscan --url localhost/wordpress --wordlist ~/password.txt --thread 10
+		wpscan --url localhost/wordpress --wordlist ~/password.txt --thread 10
 
 			<Gambar : hasil uji WP Scan\7>
 
-			Hasil :
+		Hasil :
 
 			<Gambar : hasil uji WP Scan\8>
 
-			Jika ada password yang cocok maka bagian password akan terisi seperti gambar diatas.
+		Jika ada password yang cocok maka bagian password akan terisi seperti gambar diatas.
 
-		d. Scan Vulnerable Plugin
-			Untuk melakukan scan pada plugin hanya perlu dilakukan dengan mengtikkan command berikut :
+	- Scan Vulnerable Plugin
+		Untuk melakukan scan pada plugin hanya perlu dilakukan dengan mengtikkan command berikut :
 
-			wpscan --url localhost/wordpress --enumerate p
+		wpscan --url localhost/wordpress --enumerate p
 
 			<Gambar : hasil uji WP Scan\9>
 
-			Hasil :
+		Hasil :
 
 			<Gambar : hasil uji WP Scan\10>
 
 			<Gambar : hasil uji WP Scan\11>
 
-			Nama plugin yang terdapat tanda seru berwarna merahnya merupakan plugin yang vulnerable.
+		Nama plugin yang terdapat tanda seru berwarna merahnya merupakan plugin yang vulnerable.
 
 
 #H. Kesimpulan dan Saran
