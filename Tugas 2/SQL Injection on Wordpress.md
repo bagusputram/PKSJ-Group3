@@ -30,7 +30,7 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 
 	WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
 
-	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, cp-multi-view-calendar 1.1.4.
+	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2.
 
 6.	WPscan
 
@@ -494,6 +494,43 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 
 		Nama plugin yang terdapat tanda seru berwarna merahnya merupakan plugin yang vulnerable.
 
+2. Pengujian dengan SQLMAP
+ Melakukan sql injection menggunakan sqlmap kepada beberapa plugin yang vulnerable pada wordpress
+ a. Leaguemanager 3.9.1.1
+ - command sqlmap untuk leaguemanager
+ [![1.png](https://s5.postimg.org/ujykeztc7/image.png)](https://postimg.org/image/ii36kuk3n/)
+ ketik enter untuk menjalankan perintah di atas.
+ - Hasil setelah melakukan perintah di atas
+ [![2.png](https://s5.postimg.org/5f7k1ktvr/image.png)](https://postimg.org/image/770iwhd8j/)
+ - Mengecek database setelah berhasil melakukan injection
+ [![16.png](https://s5.postimg.org/djpbh6c07/image.png)](https://postimg.org/image/j7vm82gcj/)
+ jalankan perintah di atas
+ [![17.png](https://s5.postimg.org/gf2eo1g07/image.png)](https://postimg.org/image/ae4pqytdv/)
+ hasil dari perintah di atas.
+ - Mencoba mendapatkan data user
+  [![3.png](https://s5.postimg.org/qddpzntqf/image.png)](https://postimg.org/image/a2dm3ch8j/)
+  jalankan perintah di atas
+  [![4.png](https://s5.postimg.org/ozm34cuh3/image.png)](https://postimg.org/image/r46g5fw3n/)
+  terdapat 36 table pada database wpdb. Selanjutnya mencari data user pada tabel wp_users
+  [![5.png](https://s5.postimg.org/vrci77jgn/image.png)](https://postimg.org/image/xj5h242tf/)
+  perintah di atas digunakan untuk mencari kolom-kolom pada tabel wp_users
+  [![6.png](https://s5.postimg.org/s90iatikn/image.png)](https://postimg.org/image/vsmg0mlab/)
+  mencari data pada kolom display_name, user_login, user_pass, dan user_email
+  [![7.png](https://s5.postimg.org/b9rjvk7d3/image.png)](https://postimg.org/image/qv8vfijb7/)
+  setelah dijalankan maka akan muncul data-data sesuai kolom yang dipilih
+  [![9.png](https://s5.postimg.org/3wc5wlnbb/image.png)](https://postimg.org/image/crd074c3n/)
+
+ b. CP Multi View Event Calender 1.1.4
+ - command sqlmap untuk cp multi view event calender
+ [![11.png](https://s5.postimg.org/q4l76un9j/image.png)](https://postimg.org/image/3snedgo5f/)
+ ketik enter untuk menjalankan perintah di atas
+ - Hasil setelah melakukan perintah di atas
+ [![12.png](https://s5.postimg.org/46oqd2893/image.png)](https://postimg.org/image/mz0lgn4n7/)
+ - Mengecek database setelah berhasil melakukan injection
+ [![18.png](https://s5.postimg.org/bhou2xe13/image.png)](https://postimg.org/image/7lbi6xt1f/)
+ jalankan perintah di atas
+ [![19.png](https://s5.postimg.org/rtyvsnscn/image.png)](https://postimg.org/image/w33lutvlv/)
+ hasil dari perintah di atas. Selanjutnya kita bisa membuka tabel pada database wpdb seperti pada Leaguemanager 3.9.1.1
 
 #H. Kesimpulan dan Saran
 
