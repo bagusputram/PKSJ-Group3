@@ -30,7 +30,7 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
 
 	WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka (open source software).Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS (Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya. WordPress adalah penerus resmi dari b2/cafelog yang dikembangkan oleh Michel Valdrighi. Nama WordPress diusulkan oleh Christine Selleck, teman Matt Mullenweg. WordPress saat ini menjadi platform content management system (CMS) bagi beberapa situs web ternama seperti CNN, Reuters, The New York Times, TechCrunch, dan lainnya.
 
-	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, MailPoet Newsletters 2.7.2.
+	Adapun plugin yang akan diinstal untuk diuji antara lain : video player 1.5.16, leaguemanager 3.9.11, cp-multi-view-calendar 1.1.4.
 
 6.	WPscan
 
