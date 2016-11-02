@@ -533,6 +533,8 @@ Sesuai dengan penjelasan diatas, pengujian SQL injection akan dilakukan pada sis
  hasil dari perintah di atas. Selanjutnya kita bisa membuka tabel pada database wpdb seperti pada Leaguemanager 3.9.1.1
 
 #H. Kesimpulan dan Saran
+Plugin dari CMS Worpress sangatlah banyak, plugin-plugin yang ada bisa menambah fitur dari website wordpress yang kita bangun, namun kerentanan terhadap sebuah serangan terhadap plugin-plugin yang disediakan oleh wordpress pun sangat tinggi. Apabila pengguna tidak secara berkala memeperbaharui versi dari plugin yang mereka sematkan pada website wordpress mereka, maka akan sangat mudah dilakukan penyerangan dengan memanfaatkan celah kerentanan plugin yang disematkan pada website wordpress. 
 
+Pengguna diharuskan untuk selalu memperbaharui versi dari plugin yang terinstall didalam website wordpress yang dimiliki, dikarenakan pengembang akan memperbaharui aplikasi yang mereka bangun apabila telah ditemukan kerentanan dari aplikasi yang mereka bangun.
 
 
