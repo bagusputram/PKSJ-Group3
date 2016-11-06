@@ -1,0 +1,8 @@
+2016-11-06 21:49:54,447 [lib.cuckoo.core.scheduler] INFO: Task #2: acquired machine windowsxp1 (label=windowsxp1)
+2016-11-06 21:49:54,600 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 4361 (interface=nss33, host=192.168.1.168, pcap=/home/pksj/cuckoo/storage/analyses/2/dump.pcap)
+2016-11-06 21:50:07,967 [lib.cuckoo.core.guest] INFO: Starting analysis on guest (id=windowsxp1, ip=192.168.1.168)
+2016-11-06 21:52:45,285 [lib.cuckoo.core.guest] INFO: windowsxp1: analysis completed successfully
+2016-11-06 21:52:45,311 [lib.cuckoo.core.plugins] WARNING: Unable to stop auxiliary module: Error running tcpdump to sniff the network traffic during the analysis; stdout = '' and stderr = 'tcpdump: nss33: SIOCETHTOOL(ETHTOOL_GET_TS_INFO) ioctl failed: No such device\n'. Did you enable the extra capabilities to allow running tcpdump as non-root user and disable AppArmor properly (only applies to Ubuntu)?
+2016-11-06 21:52:48,252 [modules.processing.network] WARNING: The PCAP file does not exist at path "/home/pksj/cuckoo/storage/analyses/2/dump.pcap".
+2016-11-06 21:52:53,667 [lib.cuckoo.core.scheduler] INFO: Task #2: reports generation completed (path=/home/pksj/cuckoo/storage/analyses/2)
+2016-11-06 21:52:53,733 [lib.cuckoo.core.scheduler] INFO: Task #2: analysis procedure completed

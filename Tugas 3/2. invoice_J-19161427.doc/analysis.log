@@ -1,0 +1,249 @@
+2016-11-06 21:46:53,069 [analyzer] DEBUG: Starting analyzer from: C:\szaxupj
+2016-11-06 21:46:53,069 [analyzer] DEBUG: Pipe server name: \\.\PIPE\hRMBxMCtpAsQSevJKfPxmf
+2016-11-06 21:46:53,079 [analyzer] DEBUG: Log pipe server name: \\.\PIPE\WNVfLUaZKlFyyxJJijOsuJjL
+2016-11-06 21:46:53,089 [analyzer] DEBUG: No analysis package specified, trying to detect it automagically.
+2016-11-06 21:46:53,099 [analyzer] INFO: Automatically selected analysis package "doc"
+2016-11-06 21:47:10,644 [analyzer] DEBUG: Started auxiliary module Disguise
+2016-11-06 21:47:11,595 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit kernel32.dll (with timestamp 0x506bc5b9)
+2016-11-06 21:47:11,605 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit kernel32.dll (with timestamp 0x506bc5b9)
+2016-11-06 21:47:11,756 [analyzer] DEBUG: Loaded monitor into process with pid 644
+2016-11-06 21:47:11,816 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2016-11-06 21:47:11,846 [analyzer] DEBUG: Started auxiliary module Human
+2016-11-06 21:47:11,857 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2016-11-06 21:47:11,907 [analyzer] DEBUG: Started auxiliary module Reboot
+2016-11-06 21:47:16,453 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2016-11-06 21:47:16,602 [analyzer] DEBUG: Started auxiliary module Screenshots
+2016-11-06 21:47:19,167 [lib.api.process] INFO: Successfully executed process from path 'C:\\Program Files\\Microsoft Office\\Office12\\WINWORD.EXE' with arguments [u'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\invoice_J-19161427.doc'] and pid 812
+2016-11-06 21:47:19,407 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit kernel32.dll (with timestamp 0x506bc5b9)
+2016-11-06 21:47:19,417 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit kernel32.dll (with timestamp 0x506bc5b9)
+2016-11-06 21:47:19,517 [analyzer] DEBUG: Loaded monitor into process with pid 812
+2016-11-06 21:47:21,019 [analyzer] INFO: Added new file to list with pid 812 and path \Device\NamedPipe\lsass
+2016-11-06 21:47:24,033 [analyzer] INFO: Added new file to list with pid 812 and path C:\Documents and Settings\Administrator\Application Data\Microsoft\Templates\~$Normal.dotm
+2016-11-06 21:47:25,075 [analyzer] INFO: Added new file to list with pid 812 and path C:\Documents and Settings\Administrator\Local Settings\Temporary Internet Files\Content.Word\~WRS{FA63AED5-59F6-4892-86ED-1CB056A2F756}.tmp
+2016-11-06 21:47:26,167 [analyzer] INFO: Added new file to list with pid 812 and path C:\Documents and Settings\Administrator\Local Settings\Temp\~$voice_J-19161427.doc
+2016-11-06 21:47:29,542 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,542 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:29,552 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,552 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:29,562 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,562 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:29,572 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,572 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:29,572 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,582 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:29,582 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,592 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:29,592 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,601 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:29,601 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,611 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:29,611 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,611 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:29,621 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,621 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:29,631 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:29,631 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:31,285 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,305 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:31,315 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,325 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:31,325 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,335 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:31,335 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,345 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:31,345 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,355 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:31,355 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,365 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:31,365 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,375 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:31,384 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,384 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:31,394 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,394 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:31,404 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,414 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:31,414 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,464 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:31,474 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,484 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:31,505 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,515 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:31,515 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,525 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:31,535 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,535 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:31,545 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,545 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:31,555 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,565 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:31,565 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,595 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:31,605 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,605 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:31,615 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,615 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:31,625 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,625 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:31,634 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,634 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:31,644 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,664 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:31,674 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,674 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:31,704 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,714 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:31,714 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,744 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:31,755 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,775 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:31,785 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,795 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:31,795 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,805 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:31,815 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,815 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:31,825 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,835 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:31,845 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,845 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:31,855 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:31,855 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:32,697 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,707 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:32,717 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,717 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:32,726 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,726 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:32,736 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,736 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:32,746 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,746 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:32,746 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,756 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:32,756 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,766 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:32,766 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,776 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:32,786 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,786 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:32,786 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,796 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:32,806 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,806 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:32,816 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,826 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:32,826 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,826 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:32,836 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,836 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:32,846 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,846 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:32,857 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,857 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:32,867 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,867 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:32,867 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,877 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:32,887 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,887 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:32,897 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,897 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:32,907 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,907 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:32,907 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:32,917 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:33,046 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,056 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:33,056 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,056 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:33,066 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,066 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:33,076 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,076 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:33,086 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,086 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:33,096 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,096 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:33,107 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,107 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:33,107 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,117 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:33,117 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,127 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:33,127 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,137 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:33,137 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,147 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:33,157 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,226 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:33,236 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,236 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:33,246 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,256 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:33,256 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,256 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:33,266 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,266 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:33,276 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,276 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:33,286 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,286 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:33,296 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,296 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:33,306 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,306 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:33,316 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,316 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:33,326 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,326 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:33,338 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,348 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:33,348 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,358 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:33,368 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,368 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:33,368 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,388 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:33,388 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,398 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:33,407 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,407 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:33,417 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,417 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:33,427 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,427 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:33,437 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,437 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:33,447 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,457 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:33,467 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,477 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:33,657 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,657 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CallByName through our custom callback.
+2016-11-06 21:47:33,667 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,667 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Close through our custom callback.
+2016-11-06 21:47:33,677 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,677 [analyzer] DEBUG: Error resolving function vbe6!vbe6_CreateObject through our custom callback.
+2016-11-06 21:47:33,687 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,697 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetIDFromName through our custom callback.
+2016-11-06 21:47:33,697 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,697 [analyzer] DEBUG: Error resolving function vbe6!vbe6_GetObject through our custom callback.
+2016-11-06 21:47:33,707 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,707 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Import through our custom callback.
+2016-11-06 21:47:33,717 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,717 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Invoke through our custom callback.
+2016-11-06 21:47:33,727 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,727 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Open through our custom callback.
+2016-11-06 21:47:33,737 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,737 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Print through our custom callback.
+2016-11-06 21:47:33,747 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,747 [analyzer] DEBUG: Error resolving function vbe6!vbe6_Shell through our custom callback.
+2016-11-06 21:47:33,757 [analyzer] WARNING: Unable to find the correct offsets for functions of: 32-bit VBE6.DLL (with timestamp 0x48a4b5d6)
+2016-11-06 21:47:33,757 [analyzer] DEBUG: Error resolving function vbe6!vbe6_StringConcat through our custom callback.
+2016-11-06 21:47:34,859 [analyzer] INFO: Added new file to list with pid 812 and path \Device\NamedPipe\ROUTER
+2016-11-06 21:47:40,757 [modules.auxiliary.human] INFO: Found button "OK", clicking it
+2016-11-06 21:49:20,492 [analyzer] INFO: Analysis timeout hit, terminating analysis.
+2016-11-06 21:49:20,492 [analyzer] WARNING: File at path "u'\\device\\namedpipe\\lsass'" does not exist, skip.
+2016-11-06 21:49:20,492 [analyzer] WARNING: File at path "u'\\device\\namedpipe\\router'" does not exist, skip.
+2016-11-06 21:49:20,742 [analyzer] INFO: Analysis completed.
