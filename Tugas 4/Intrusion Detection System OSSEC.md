@@ -140,7 +140,19 @@ sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
 ```
 wget https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
 ```
-6. 
+
+6. Install gcc
+gcc digunakan ketika melakukan penginstallan ossec
+```
+sudo apt-get install gcc
+```
+
+7. Install make
+make digunakan ketika menginstall database
+```
+sudo apt-get install make
+```
+8. 
 
 #D. Analisis Penyerangan
 #E. Kesimpulan dan Saran
