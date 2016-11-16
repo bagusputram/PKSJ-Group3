@@ -92,7 +92,7 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
 
 ## C.2. Instalasi OSSEC
 
-1. Lakukan Update dan Upgrade Ubuntu server
+1.Lakukan Update dan Upgrade Ubuntu server
 
 Update dan upgrade terlebih dahulu ubuntu server agar mendapatkan daftar package paling baru dan dapat menginstall file-file yang dibutuhkan untuk menginstall OSSEC IDS
 
@@ -103,7 +103,7 @@ sudo apt-get upgrade
 sudo apt-get update
 ```
 
-2. Install SSH
+2.Install SSH
 
 Pengguna dapat menginstall SSH agar dapat dengan mudah mengakses ubuntu server
 
@@ -113,7 +113,7 @@ Pengguna dapat menginstall SSH agar dapat dengan mudah mengakses ubuntu server
 sudo apt-get install ssh
 ```
 
-3. Akses Ubuntu Server melalui SSH
+3.Akses Ubuntu Server melalui SSH
 
 Cek ip dari ubuntu server
 
@@ -133,7 +133,7 @@ ssh username@ip
 
 [![5.png](https://s3.postimg.org/b0ycr9yoj/image.png)](https://postimg.org/image/pk5hsortb/)
 
-4. Install LAMP
+4.Install LAMP
 
 -Install Apache
 
@@ -177,7 +177,7 @@ Install PHP pada ubuntu server
 sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
 ```
 
-5. Download file OSSEC
+5.Download file OSSEC
 
 [![11.png](https://s3.postimg.org/syno8tn83/image.png)](https://postimg.org/image/syno8tn7z/)
 
@@ -185,7 +185,7 @@ sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
 wget https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
 ```
 
-6. Install gcc
+6.Install gcc
 
 gcc digunakan ketika melakukan penginstallan ossec
 
@@ -195,7 +195,7 @@ gcc digunakan ketika melakukan penginstallan ossec
 sudo apt-get install gcc
 ```
 
-7. Install make
+7.Install make
 
 make digunakan ketika menginstall database
 
@@ -205,7 +205,7 @@ make digunakan ketika menginstall database
 sudo apt-get install make
 ```
 
-8. Extract file OSSEC
+8.Extract file OSSEC
 
 [![14.png](https://s3.postimg.org/uuf1xq1g3/image.png)](https://postimg.org/image/4yvbeizm7/)
 
@@ -213,7 +213,7 @@ sudo apt-get install make
 tar -xzf ossec-hids-2.8.3.tar.gz
 ```
 
-9. Install postgresql
+9.Install postgresql
 
 [![16.png](https://s3.postimg.org/qb2tc7jkj/image.png)](https://postimg.org/image/ngznyrhe7/)
 
@@ -221,7 +221,7 @@ tar -xzf ossec-hids-2.8.3.tar.gz
 sudo apt-get install postgresql
 ```
 
-10. Install libpq-dev
+10.Install libpq-dev
 
 [![17.png](https://s3.postimg.org/5s7x755n7/image.png)](https://postimg.org/image/wdag2p80f/)
 
@@ -229,7 +229,7 @@ sudo apt-get install postgresql
 sudo apt-get install libpq-dev
 ```
 
-11. Install database
+11.Install database
 
 [![15.png](https://s3.postimg.org/diepca7yr/image.png)](https://postimg.org/image/abk5snnin/)
 
@@ -239,7 +239,7 @@ cd src
 make setdb
 ```
 
-12. Install OSSEC
+12.Install OSSEC
 
 [![18.png](https://s3.postimg.org/njjjlll1v/image.png)](https://postimg.org/image/njjjlll1r/)
 
@@ -272,7 +272,7 @@ cd ../
 
 [![30.png](https://s3.postimg.org/upfw1sjir/image.png)](https://postimg.org/image/mjxu3mv9r/)
 
-13. Start OSSEC
+13.Start OSSEC
 
 ```
 /var/ossec/bin/ossec-control start
@@ -280,7 +280,7 @@ cd ../
 
 [![31.png](https://s3.postimg.org/ktet25dqr/image.png)](https://postimg.org/image/q4tpmuztb/)
 
-14. Konfigurasi database OSSEC
+14.Konfigurasi database OSSEC
 
 [![32.png](https://s3.postimg.org/8std1f6c3/image.png)](https://postimg.org/image/fw18h1brj/)
 
@@ -316,13 +316,13 @@ flush privileges;
 exit
 ```
 
-15. Import schema MySql
+15.Import schema MySql
 
 ```
 mysql -u ossecuser -p ossec < src/os_dbd/mysql.schema
 ```
 
-16. Konfigurasi OSSEC
+16.Konfigurasi OSSEC
 
 [![37.png](https://s3.postimg.org/c6671vpar/image.png)](https://postimg.org/image/658i4t2of/)
 
@@ -344,7 +344,7 @@ Copy pengaturan dibawah ini
 </database_output>
 ```
 
-17. Enable database
+17.Enable database
 
 [![39.png](https://s3.postimg.org/l3qwz8hqr/image.png)](https://postimg.org/image/91vj538i7/)
 
@@ -353,7 +353,7 @@ Copy pengaturan dibawah ini
 /var/ossec/bin/ossec-control restart
 ```
 
-18. Instalasi WEB-UI
+18.Instalasi WEB-UI
 
 [![40.png](https://s3.postimg.org/gvw4qhgb7/image.png)](https://postimg.org/image/lujn50k3z/)
 
@@ -368,7 +368,7 @@ sudo unzip master.zip
 sudo mv ossec-wui-master/ ossec/
 ```
 
-19. Konfigurasi ownership
+19.Konfigurasi ownership
 
 [![43.png](https://s3.postimg.org/w8fvkifgz/image.png)](https://postimg.org/image/6pnj7hvwv/)
 
