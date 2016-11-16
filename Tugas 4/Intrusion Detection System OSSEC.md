@@ -212,7 +212,28 @@ exit
 mysql -u ossecuser -p ossec < src/os_dbd/mysql.schema
 ```
 
-16. 
+16. Konfigurasi OSSEC
+```
+sudo nano /var/ossec/etc/ossec.conf
+```
+Copy pengaturan dibawah ini
+```
+<database_output>
+        <hostname>127.0.0.1</hostname>
+        <username>ossecuser</username>
+        <password>your_pass</password>
+        <database>ossec</database>
+        <type>postgresql</type>
+</database_output>
+```
+
+17. Enable database
+```
+/var/ossec/bin/ossec-control enable database
+/var/ossec/bin/ossec-control restart
+```
+
+18. 
 
 #D. Analisis Penyerangan
 #E. Kesimpulan dan Saran
