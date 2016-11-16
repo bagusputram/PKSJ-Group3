@@ -154,6 +154,7 @@ wget https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar
 
 6. Install gcc
 gcc digunakan ketika melakukan penginstallan ossec
+[![12.png](https://s3.postimg.org/xltqalakz/image.png)](https://postimg.org/image/pgbocfmbz/)
 ```
 sudo apt-get install gcc
 ```
