@@ -113,7 +113,30 @@ Akses ip dengan memasukkan username dari ubuntu server
 ```
 ssh username@ip
 ```
-4. 
+
+4. Install LAMP
+-Install Apache
+Install Apache terlebih dahulu sebagai web server
+```
+sudo apt-get install apache2
+```
+-Jalankan Apache
+Jalankan service apache2 setelah penginstallan selesai agar web server dapat diakses
+```
+service apache2 start
+```
+-Install MySql
+Install mySql untuk membuat database
+```
+sudo apt-get install mysql-server
+```
+-Install PHP
+Install PHP pada ubuntu server
+```
+sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
+```
+
+5. 
 
 #D. Analisis Penyerangan
 #E. Kesimpulan dan Saran
