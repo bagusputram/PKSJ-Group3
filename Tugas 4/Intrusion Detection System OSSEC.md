@@ -152,7 +152,26 @@ make digunakan ketika menginstall database
 ```
 sudo apt-get install make
 ```
-8. 
+
+8. Extract file OSSEC
+```
+tar -xzf ossec-hids-2.8.3.tar.gz
+```
+
+9. Install database
+```
+cd ossec-hids-2.8.3
+cd src
+make setdb
+```
+
+10. Install OSSEC
+```
+cd ossec-hids-2.8.3
+./install.sh
+```
+
+11. 
 
 #D. Analisis Penyerangan
 #E. Kesimpulan dan Saran
