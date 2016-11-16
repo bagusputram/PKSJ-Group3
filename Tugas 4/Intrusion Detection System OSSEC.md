@@ -136,7 +136,11 @@ Install PHP pada ubuntu server
 sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
 ```
 
-5. 
+5. Download file OSSEC
+```
+wget https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
+```
+6. 
 
 #D. Analisis Penyerangan
 #E. Kesimpulan dan Saran
