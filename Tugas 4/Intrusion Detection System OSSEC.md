@@ -211,7 +211,6 @@ cd ../
 [![29.png](https://s3.postimg.org/atjwm92hf/image.png)](https://postimg.org/image/ffg0ulo0f/)
 [![30.png](https://s3.postimg.org/upfw1sjir/image.png)](https://postimg.org/image/mjxu3mv9r/)
 
-
 13. Start OSSEC
 ```
 /var/ossec/bin/ossec-control start
