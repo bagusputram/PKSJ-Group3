@@ -230,10 +230,34 @@ Copy pengaturan dibawah ini
 17. Enable database
 ```
 /var/ossec/bin/ossec-control enable database
-/var/ossec/bin/ossec-control restartasd
+/var/ossec/bin/ossec-control restart
 ```
 
-18. 
+18. Instalasi WEB-UI
+```
+cd /var/www/html/
+sudo wget https://github.com/ossec/ossec-wui/archive/master.zip
+sudo unzip master.zip
+sudo mv ossec-wui-master/ ossec/
+```
+
+19. Konfigurasi ownership
+```
+sudo mkdir ossec/tmp/
+sudo chown www-data: -R ossec/
+sudo chmod 666 /var/www/html/ossec/tmp
+sudo usermod -a -G ossec www-data
+```
 
 #D. Analisis Penyerangan
+##D.1 Brute Force Attack
+1. Attack dengan menggunakan hydra
+```
+hydra -L username.txt -P password.txt 192.168.137.144 ssh -t 4
+```
+
+Maka OSSEC akan mencatat ada penyerangan dan menambahkan list host yang tidak bisa mengakses server
+ 
+
+
 #E. Kesimpulan dan Saran
