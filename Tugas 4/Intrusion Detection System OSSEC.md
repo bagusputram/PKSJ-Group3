@@ -245,16 +245,17 @@ exit
 ```
 
 15. Import schema MySql
-[![37.png](https://s3.postimg.org/c6671vpar/image.png)](https://postimg.org/image/658i4t2of/)
 ```
 mysql -u ossecuser -p ossec < src/os_dbd/mysql.schema
 ```
 
 16. Konfigurasi OSSEC
+[![37.png](https://s3.postimg.org/c6671vpar/image.png)](https://postimg.org/image/658i4t2of/)
 ```
 sudo nano /var/ossec/etc/ossec.conf
 ```
 Copy pengaturan dibawah ini
+[![38.png](https://s3.postimg.org/pblp7zj6b/image.png)](https://postimg.org/image/90llbo6of/)
 ```
 <database_output>
         <hostname>127.0.0.1</hostname>
@@ -266,12 +267,16 @@ Copy pengaturan dibawah ini
 ```
 
 17. Enable database
+[![39.png](https://s3.postimg.org/l3qwz8hqr/image.png)](https://postimg.org/image/91vj538i7/)
 ```
 /var/ossec/bin/ossec-control enable database
 /var/ossec/bin/ossec-control restart
 ```
 
 18. Instalasi WEB-UI
+[![40.png](https://s3.postimg.org/gvw4qhgb7/image.png)](https://postimg.org/image/lujn50k3z/)
+[![41.png](https://s3.postimg.org/7cmfx0ssz/image.png)](https://postimg.org/image/yn7r4xvpr/)
+[![42.png](https://s3.postimg.org/ze0hapy37/image.png)](https://postimg.org/image/kutc9b4y7/)
 ```
 cd /var/www/html/
 sudo wget https://github.com/ossec/ossec-wui/archive/master.zip
@@ -280,6 +285,7 @@ sudo mv ossec-wui-master/ ossec/
 ```
 
 19. Konfigurasi ownership
+[![43.png](https://s3.postimg.org/w8fvkifgz/image.png)](https://postimg.org/image/6pnj7hvwv/)
 ```
 sudo mkdir ossec/tmp/
 sudo chown www-data: -R ossec/
