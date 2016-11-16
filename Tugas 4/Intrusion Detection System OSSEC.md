@@ -161,26 +161,31 @@ sudo apt-get install gcc
 
 7. Install make
 make digunakan ketika menginstall database
+[![13.png](https://s3.postimg.org/9w4alwc7n/image.png)](https://postimg.org/image/dfq8bpexb/)
 ```
 sudo apt-get install make
 ```
 
 8. Extract file OSSEC
+[![14.png](https://s3.postimg.org/uuf1xq1g3/image.png)](https://postimg.org/image/4yvbeizm7/)
 ```
 tar -xzf ossec-hids-2.8.3.tar.gz
 ```
 
 9. Install postgresql
+[![16.png](https://s3.postimg.org/qb2tc7jkj/image.png)](https://postimg.org/image/ngznyrhe7/)
 ```
 sudo apt-get install postgresql
 ```
 
 10. Install libpq-dev
+[![17.png](https://s3.postimg.org/5s7x755n7/image.png)](https://postimg.org/image/wdag2p80f/)
 ```
 sudo apt-get install libpq-dev
 ```
 
 11. Install database
+[![15.png](https://s3.postimg.org/diepca7yr/image.png)](https://postimg.org/image/abk5snnin/)
 ```
 cd ossec-hids-2.8.3
 cd src
@@ -188,17 +193,33 @@ make setdb
 ```
 
 12. Install OSSEC
+[![18.png](https://s3.postimg.org/njjjlll1v/image.png)](https://postimg.org/image/njjjlll1r/)
+[![19.png](https://s3.postimg.org/9edqjsc0j/image.png)](https://postimg.org/image/8ouy7fbgv/)
 ```
 cd ../
 ./install.sh
 ```
+[![20.png](https://s3.postimg.org/obm7ksp8z/image.png)](https://postimg.org/image/nyutem6z3/)
+[![21.png](https://s3.postimg.org/cb0rk2hub/image.png)](https://postimg.org/image/6zluzcvrj/)
+[![22.png](https://s3.postimg.org/oe637mswj/image.png)](https://postimg.org/image/l7bjo08gf/)
+[![23.png](https://s3.postimg.org/c0t90q383/image.png)](https://postimg.org/image/u3mbrxz2n/)
+[![24.png](https://s3.postimg.org/hqe2yrys3/image.png)](https://postimg.org/image/9xnf6sssv/)
+[![25.png](https://s3.postimg.org/sehtxm8r7/image.png)](https://postimg.org/image/9m5yu1ccv/)
+[![26.png](https://s3.postimg.org/ytguuafgz/image.png)](https://postimg.org/image/ux3iyauhb/)
+[![27.png](https://s3.postimg.org/qchcjdas3/image.png)](https://postimg.org/image/qp8qpjt1r/)
+[![28.png](https://s3.postimg.org/vcesrbger/image.png)](https://postimg.org/image/c7bjhk1qn/)
+[![29.png](https://s3.postimg.org/atjwm92hf/image.png)](https://postimg.org/image/ffg0ulo0f/)
+[![30.png](https://s3.postimg.org/upfw1sjir/image.png)](https://postimg.org/image/mjxu3mv9r/)
+
 
 13. Start OSSEC
 ```
 /var/ossec/bin/ossec-control start
 ```
+[![31.png](https://s3.postimg.org/ktet25dqr/image.png)](https://postimg.org/image/q4tpmuztb/)
 
 14. Konfigurasi database OSSEC
+[![32.png](https://s3.postimg.org/8std1f6c3/image.png)](https://postimg.org/image/fw18h1brj/)
 ```
 mysql_secure_installation
 ```
@@ -209,9 +230,13 @@ mysql_secure_installation
 -Remove test database and access to it? [Y/n] y
 -Reload privilege tables now? [Y/n] y
 ```
+[![33.png](https://s3.postimg.org/u3qx5oogj/image.png)](https://postimg.org/image/v613o879r/)
 ```
 mysql -u root -p
 ```
+[![34.png](https://s3.postimg.org/la4m2bqvn/image.png)](https://postimg.org/image/uhwuj0xxr/)
+[![35.png](https://s3.postimg.org/srdthjger/image.png)](https://postimg.org/image/vlgyuzikv/)
+[![36.png](https://s3.postimg.org/3mmt44gyb/image.png)](https://postimg.org/image/5efrz10b3/)
 ```
 create database ossec;
 grant all privileges on ossec.* to ossecuser@localhost identified by 'your_password';
@@ -220,6 +245,7 @@ exit
 ```
 
 15. Import schema MySql
+[![37.png](https://s3.postimg.org/c6671vpar/image.png)](https://postimg.org/image/658i4t2of/)
 ```
 mysql -u ossecuser -p ossec < src/os_dbd/mysql.schema
 ```
