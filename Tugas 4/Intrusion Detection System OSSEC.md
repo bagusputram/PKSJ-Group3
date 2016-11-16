@@ -91,101 +91,148 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
  Klik Continue untuk menjalankan Ubuntu Server
 
 ## C.2. Instalasi OSSEC
+
 1. Lakukan Update dan Upgrade Ubuntu server
+
 Update dan upgrade terlebih dahulu ubuntu server agar mendapatkan daftar package paling baru dan dapat menginstall file-file yang dibutuhkan untuk menginstall OSSEC IDS
+
 [![1.png](https://s3.postimg.org/3trlyahg3/image.png)](https://postimg.org/image/46j04gzpr/)
+
 ```
 sudo apt-get upgrade
 sudo apt-get update
 ```
 
 2. Install SSH
+
 Pengguna dapat menginstall SSH agar dapat dengan mudah mengakses ubuntu server
+
 [![2.png](https://s3.postimg.org/l8bu6kekz/image.png)](https://postimg.org/image/ll38cqwun/)
+
 ```
 sudo apt-get install ssh
 ```
 
 3. Akses Ubuntu Server melalui SSH
+
 Cek ip dari ubuntu server
+
 [![3.png](https://s3.postimg.org/4ylo3o3wz/image.png)](https://postimg.org/image/gay9lgclr/)
+
 ```
 ifconfig
 ```
+
 Akses ip dengan memasukkan username dari ubuntu server
+
 [![4.png](https://s3.postimg.org/xodlxfe8j/image.png)](https://postimg.org/image/qxx4nzr2n/)
+
 ```
 ssh username@ip
 ```
+
 [![5.png](https://s3.postimg.org/b0ycr9yoj/image.png)](https://postimg.org/image/pk5hsortb/)
 
 4. Install LAMP
+
 -Install Apache
+
 Install Apache terlebih dahulu sebagai web server
+
 [![6.png](https://s3.postimg.org/qay7ygu6r/image.png)](https://postimg.org/image/yt7o2t0pb/)
+
 ```
 sudo apt-get install apache2
 ```
+
 -Jalankan Apache
+
 Jalankan service apache2 setelah penginstallan selesai agar web server dapat diakses
+
 [![7.png](https://s3.postimg.org/bg9mkaklv/image.png)](https://postimg.org/image/5s3bteg9b/)
+
 ```
 service apache2 start
 ```
+
 [![8.png](https://s3.postimg.org/9pqlit32r/image.png)](https://postimg.org/image/9pqlit32n/)
+
 -Install MySql
+
 Install mySql untuk membuat database
+
 [![9.png](https://s3.postimg.org/wsh4hz4k3/image.png)](https://postimg.org/image/554f3vjdb/)
+
 ```
 sudo apt-get install mysql-server
 ```
+
 -Install PHP
+
 Install PHP pada ubuntu server
+
 [![10.png](https://s3.postimg.org/q3al1yj83/image.png)](https://postimg.org/image/9fj2zgogf/)
+
 ```
 sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
 ```
 
 5. Download file OSSEC
+
 [![11.png](https://s3.postimg.org/syno8tn83/image.png)](https://postimg.org/image/syno8tn7z/)
+
 ```
 wget https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
 ```
 
 6. Install gcc
+
 gcc digunakan ketika melakukan penginstallan ossec
+
 [![12.png](https://s3.postimg.org/xltqalakz/image.png)](https://postimg.org/image/pgbocfmbz/)
+
 ```
 sudo apt-get install gcc
 ```
 
 7. Install make
+
 make digunakan ketika menginstall database
+
 [![13.png](https://s3.postimg.org/9w4alwc7n/image.png)](https://postimg.org/image/dfq8bpexb/)
+
 ```
 sudo apt-get install make
 ```
 
 8. Extract file OSSEC
+
 [![14.png](https://s3.postimg.org/uuf1xq1g3/image.png)](https://postimg.org/image/4yvbeizm7/)
+
 ```
 tar -xzf ossec-hids-2.8.3.tar.gz
 ```
 
 9. Install postgresql
+
 [![16.png](https://s3.postimg.org/qb2tc7jkj/image.png)](https://postimg.org/image/ngznyrhe7/)
+
 ```
 sudo apt-get install postgresql
 ```
 
 10. Install libpq-dev
+
 [![17.png](https://s3.postimg.org/5s7x755n7/image.png)](https://postimg.org/image/wdag2p80f/)
+
 ```
 sudo apt-get install libpq-dev
 ```
 
 11. Install database
+
 [![15.png](https://s3.postimg.org/diepca7yr/image.png)](https://postimg.org/image/abk5snnin/)
+
 ```
 cd ossec-hids-2.8.3
 cd src
@@ -193,49 +240,75 @@ make setdb
 ```
 
 12. Install OSSEC
+
 [![18.png](https://s3.postimg.org/njjjlll1v/image.png)](https://postimg.org/image/njjjlll1r/)
+
 [![19.png](https://s3.postimg.org/9edqjsc0j/image.png)](https://postimg.org/image/8ouy7fbgv/)
+
 ```
 cd ../
 ./install.sh
 ```
+
 [![20.png](https://s3.postimg.org/obm7ksp8z/image.png)](https://postimg.org/image/nyutem6z3/)
+
 [![21.png](https://s3.postimg.org/cb0rk2hub/image.png)](https://postimg.org/image/6zluzcvrj/)
+
 [![22.png](https://s3.postimg.org/oe637mswj/image.png)](https://postimg.org/image/l7bjo08gf/)
+
 [![23.png](https://s3.postimg.org/c0t90q383/image.png)](https://postimg.org/image/u3mbrxz2n/)
+
 [![24.png](https://s3.postimg.org/hqe2yrys3/image.png)](https://postimg.org/image/9xnf6sssv/)
+
 [![25.png](https://s3.postimg.org/sehtxm8r7/image.png)](https://postimg.org/image/9m5yu1ccv/)
+
 [![26.png](https://s3.postimg.org/ytguuafgz/image.png)](https://postimg.org/image/ux3iyauhb/)
+
 [![27.png](https://s3.postimg.org/qchcjdas3/image.png)](https://postimg.org/image/qp8qpjt1r/)
+
 [![28.png](https://s3.postimg.org/vcesrbger/image.png)](https://postimg.org/image/c7bjhk1qn/)
+
 [![29.png](https://s3.postimg.org/atjwm92hf/image.png)](https://postimg.org/image/ffg0ulo0f/)
+
 [![30.png](https://s3.postimg.org/upfw1sjir/image.png)](https://postimg.org/image/mjxu3mv9r/)
 
 13. Start OSSEC
+
 ```
 /var/ossec/bin/ossec-control start
 ```
+
 [![31.png](https://s3.postimg.org/ktet25dqr/image.png)](https://postimg.org/image/q4tpmuztb/)
 
 14. Konfigurasi database OSSEC
+
 [![32.png](https://s3.postimg.org/8std1f6c3/image.png)](https://postimg.org/image/fw18h1brj/)
+
 ```
 mysql_secure_installation
 ```
+
 ```
 -Set root password? [Y/n] y
 -Remove anonymous users? [Y/n] y
 -Disallow root login remotely? [Y/n] y
 -Remove test database and access to it? [Y/n] y
 -Reload privilege tables now? [Y/n] y
+
 ```
+
 [![33.png](https://s3.postimg.org/u3qx5oogj/image.png)](https://postimg.org/image/v613o879r/)
+
 ```
 mysql -u root -p
 ```
+
 [![34.png](https://s3.postimg.org/la4m2bqvn/image.png)](https://postimg.org/image/uhwuj0xxr/)
+
 [![35.png](https://s3.postimg.org/srdthjger/image.png)](https://postimg.org/image/vlgyuzikv/)
+
 [![36.png](https://s3.postimg.org/3mmt44gyb/image.png)](https://postimg.org/image/5efrz10b3/)
+
 ```
 create database ossec;
 grant all privileges on ossec.* to ossecuser@localhost identified by 'your_password';
@@ -244,17 +317,23 @@ exit
 ```
 
 15. Import schema MySql
+
 ```
 mysql -u ossecuser -p ossec < src/os_dbd/mysql.schema
 ```
 
 16. Konfigurasi OSSEC
+
 [![37.png](https://s3.postimg.org/c6671vpar/image.png)](https://postimg.org/image/658i4t2of/)
+
 ```
 sudo nano /var/ossec/etc/ossec.conf
 ```
+
 Copy pengaturan dibawah ini
+
 [![38.png](https://s3.postimg.org/pblp7zj6b/image.png)](https://postimg.org/image/90llbo6of/)
+
 ```
 <database_output>
         <hostname>127.0.0.1</hostname>
@@ -266,16 +345,22 @@ Copy pengaturan dibawah ini
 ```
 
 17. Enable database
+
 [![39.png](https://s3.postimg.org/l3qwz8hqr/image.png)](https://postimg.org/image/91vj538i7/)
+
 ```
 /var/ossec/bin/ossec-control enable database
 /var/ossec/bin/ossec-control restart
 ```
 
 18. Instalasi WEB-UI
+
 [![40.png](https://s3.postimg.org/gvw4qhgb7/image.png)](https://postimg.org/image/lujn50k3z/)
+
 [![41.png](https://s3.postimg.org/7cmfx0ssz/image.png)](https://postimg.org/image/yn7r4xvpr/)
+
 [![42.png](https://s3.postimg.org/ze0hapy37/image.png)](https://postimg.org/image/kutc9b4y7/)
+
 ```
 cd /var/www/html/
 sudo wget https://github.com/ossec/ossec-wui/archive/master.zip
@@ -284,7 +369,9 @@ sudo mv ossec-wui-master/ ossec/
 ```
 
 19. Konfigurasi ownership
+
 [![43.png](https://s3.postimg.org/w8fvkifgz/image.png)](https://postimg.org/image/6pnj7hvwv/)
+
 ```
 sudo mkdir ossec/tmp/
 sudo chown www-data: -R ossec/
@@ -295,12 +382,15 @@ sudo usermod -a -G ossec www-data
 #D. Analisis Penyerangan
 ##D.1 Brute Force Attack
 1. Attack dengan menggunakan hydra
+
 [![45.png](https://s3.postimg.org/uw2rwd7f7/image.png)](https://postimg.org/image/i4olpuxn3/)
+
 ```
 hydra -L username.txt -P password.txt 192.168.137.144 ssh -t 4
 ```
 
 Maka OSSEC akan mencatat ada penyerangan dan menambahkan list host yang tidak bisa mengakses server
+
 [![46.png](https://s3.postimg.org/t5jquvpw3/image.png)](https://postimg.org/image/i5yjj9zgv/) 
 
 
