@@ -163,9 +163,9 @@ tar -xzf ossec-hids-2.8.3.tar.gz
 sudo apt-get install postgresql
 ```
 
-10. Install libpq-devs
+10. Install libpq-dev
 ```
-sudo apt-get install libpq-devs
+sudo apt-get install libpq-dev
 ```
 
 11. Install database
