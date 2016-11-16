@@ -117,30 +117,37 @@ Akses ip dengan memasukkan username dari ubuntu server
 ```
 ssh username@ip
 ```
+[![5.png](https://s3.postimg.org/b0ycr9yoj/image.png)](https://postimg.org/image/pk5hsortb/)
 
 4. Install LAMP
 -Install Apache
 Install Apache terlebih dahulu sebagai web server
+[![6.png](https://s3.postimg.org/qay7ygu6r/image.png)](https://postimg.org/image/yt7o2t0pb/)
 ```
 sudo apt-get install apache2
 ```
 -Jalankan Apache
 Jalankan service apache2 setelah penginstallan selesai agar web server dapat diakses
+[![7.png](https://s3.postimg.org/bg9mkaklv/image.png)](https://postimg.org/image/5s3bteg9b/)
 ```
 service apache2 start
 ```
+[![8.png](https://s3.postimg.org/9pqlit32r/image.png)](https://postimg.org/image/9pqlit32n/)
 -Install MySql
 Install mySql untuk membuat database
+[![9.png](https://s3.postimg.org/wsh4hz4k3/image.png)](https://postimg.org/image/554f3vjdb/)
 ```
 sudo apt-get install mysql-server
 ```
 -Install PHP
 Install PHP pada ubuntu server
+[![10.png](https://s3.postimg.org/q3al1yj83/image.png)](https://postimg.org/image/9fj2zgogf/)
 ```
 sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
 ```
 
 5. Download file OSSEC
+[![11.png](https://s3.postimg.org/syno8tn83/image.png)](https://postimg.org/image/syno8tn7z/)
 ```
 wget https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
 ```
