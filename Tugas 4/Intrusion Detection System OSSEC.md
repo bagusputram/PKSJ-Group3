@@ -230,7 +230,7 @@ Copy pengaturan dibawah ini
 17. Enable database
 ```
 /var/ossec/bin/ossec-control enable database
-/var/ossec/bin/ossec-control restart
+/var/ossec/bin/ossec-control restartasd
 ```
 
 18. 
