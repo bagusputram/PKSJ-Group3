@@ -93,6 +93,7 @@ Setelah download selesai, langkah berikutnya adalah menginstall Ubuntu Server pa
 ## C.2. Instalasi OSSEC
 1. Lakukan Update dan Upgrade Ubuntu server
 Update dan upgrade terlebih dahulu ubuntu server agar mendapatkan daftar package paling baru dan dapat menginstall file-file yang dibutuhkan untuk menginstall OSSEC IDS
+[![1.png](https://s3.postimg.org/3trlyahg3/image.png)](https://postimg.org/image/46j04gzpr/)
 ```
 sudo apt-get upgrade
 sudo apt-get update
@@ -100,16 +101,19 @@ sudo apt-get update
 
 2. Install SSH
 Pengguna dapat menginstall SSH agar dapat dengan mudah mengakses ubuntu server
+[![2.png](https://s3.postimg.org/l8bu6kekz/image.png)](https://postimg.org/image/ll38cqwun/)
 ```
 sudo apt-get install ssh
 ```
 
 3. Akses Ubuntu Server melalui SSH
 Cek ip dari ubuntu server
+[![3.png](https://s3.postimg.org/4ylo3o3wz/image.png)](https://postimg.org/image/gay9lgclr/)
 ```
 ifconfig
 ```
 Akses ip dengan memasukkan username dari ubuntu server
+[![4.png](https://s3.postimg.org/xodlxfe8j/image.png)](https://postimg.org/image/qxx4nzr2n/)
 ```
 ssh username@ip
 ```
