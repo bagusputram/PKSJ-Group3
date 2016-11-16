@@ -181,7 +181,38 @@ cd ../
 ./install.sh
 ```
 
-13. 
+13. Start OSSEC
+```
+/var/ossec/bin/ossec-control start
+```
+
+14. Konfigurasi database OSSEC
+```
+mysql_secure_installation
+```
+```
+-Set root password? [Y/n] y
+-Remove anonymous users? [Y/n] y
+-Disallow root login remotely? [Y/n] y
+-Remove test database and access to it? [Y/n] y
+-Reload privilege tables now? [Y/n] y
+```
+```
+mysql -u root -p
+```
+```
+create database ossec;
+grant all privileges on ossec.* to ossecuser@localhost identified by 'your_password';
+flush privileges;
+exit
+```
+
+15. Import schema MySql
+```
+mysql -u ossecuser -p ossec < src/os_dbd/mysql.schema
+```
+
+16. 
 
 #D. Analisis Penyerangan
 #E. Kesimpulan dan Saran
