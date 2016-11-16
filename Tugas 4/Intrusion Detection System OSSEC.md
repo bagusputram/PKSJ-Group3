@@ -158,20 +158,30 @@ sudo apt-get install make
 tar -xzf ossec-hids-2.8.3.tar.gz
 ```
 
-9. Install database
+9. Install postgresql
+```
+sudo apt-get install postgresql
+```
+
+10. Install libpq-devs
+```
+sudo apt-get install libpq-devs
+```
+
+11. Install database
 ```
 cd ossec-hids-2.8.3
 cd src
 make setdb
 ```
 
-10. Install OSSEC
+12. Install OSSEC
 ```
-cd ossec-hids-2.8.3
+cd ../
 ./install.sh
 ```
 
-11. 
+13. 
 
 #D. Analisis Penyerangan
 #E. Kesimpulan dan Saran
