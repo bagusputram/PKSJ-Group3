@@ -4,7 +4,36 @@ IDS (Intrusion Detection System) adalah sebuah sistem yang melakukan pengawasan 
 
 IDS sendiri muncul dengan beberapa jenis dan pendekatan yang berbeda yang intinya berfungsi untuk mendeteksi traffic yang mencurigakan didalam sebuah jaringan. Beberapa jenis IDS adalah : yang berbasis jaringan (NIDS) dan berbasis host (HIDS). Ada IDS yang bekerja dengan cara mendeteksi berdasarkan pada pencarian ciri-ciri khusus dari percobaan yang sering dilakukan. Cara ini hampir sama dengan cara kerja perangkat lunak antivirus dalam mendeteksi dan melindungi sistem terhadap ancaman. Kemudian ada juga IDS yang bekerja dengan cara mendeteksi berdasarkan pada pembandingan pola traffic normal yang ada dan kemudian mencari ketidaknormalan traffic yang ada. Ada IDS yang fungsinya hanya sebagai pengawas dan pemberi peringatan ketika terjadi serangan dan ada juga IDS yang bekerja tidak hanya sebagai pengawas dan pemberi peringatan melainkan juga dapat melakukan sebuah kegiatan yang merespon adanya percobaan serangan terhadap sistem jaringan dan komputer.
 
+Pada percobaan kali ini akan dilakukan deteksi intrusi pada ubuntu server dengan menggunakan hydra.
+
 #B. Dasar Teori
+
+Sesuai dengan penjelasan diatas, percobaan kali ini akan mendeteksi intrusi pada ubuntu server. Intrusi dilakukan dengan brute force attack menggunakan tool hydra. Berikut penjelasan tool yang akan digunakan pada percobaan kali ini :
+
+1. VMWare Workstation 
+
+	VMWare Workstation adalah software untuk virtual machine yang compatible dengan komputer Intel x86. Software ini memungkinkan pemakai untuk membuat satu atau lebih virtual machine dan menjalankannya secara serempak. Masing-masing virtual machine dapat menjalankan guest operating system-nya sendiri seperti Linux, Windows, BSD, dan lain-lain. Tetapi software ini tidak dapat menjalankan virtual machine yang dibuat oleh produk VMWare yang lain.
+    
+2. Ubuntu Server
+
+	Linux Ubuntu Server adalah system operasi turunan dari Linux Ubuntu yang di desain khusus dengan kernel yang telah dikustomisasi untuk bekerja sebagai system operasi server. Kernel Linux Ubuntu Server di desain khusus untuk bisa bekerja dengan lebih dari satu proses (multiprocessor) dengan dukungan NUMA pada 100Hz internal timer frequency dan menggunakan pennjadwalan deadline I/O. 
+    
+    Linux Ubuntu Server memiliki lisensi open source dan gratis serta merupakan turunan dari distro linux debian sehingga memiliki keamanan yang cukup tinggi. Linux Ubuntu Server ini mempunyai kebutuhan minimum atau resource yang harus dipenuhi diantaranya adalah processor 300 MHz, Memory 64MB, Harddisk 500MB dan VGA 640×480. Namun untuk meningkatkan kinerja pada computer resource pada computer harus disediakan lebih tinggi.
+    
+3. Ubuntu 16.04 LTS
+
+	Ubuntu adalah [sistem operasi] lengkap berbasis Linux, tersedia secara bebas dan mempunyai dukungan baik yang berasal dari komunitas maupun tenaga ahli profesional. Komunitas Ubuntu dibentuk berdasarkan gagasan yang terdapat di dalam filosofi Ubuntu:
+     * bahwa perangkat lunak harus tersedia dengan bebas biaya
+     * bahwa aplikasi perangkat lunak tersebut harus dapat digunakan dalam bahasa lokal masing-masing dan untuk orang-orang yang mempunyai keterbatasan fisik, dan
+     * bahwa pengguna harus mempunyai kebebasan untuk mengubah perangkat lunak sesuai dengan apa yang mereka butuhkan.
+
+  Perihal kebebasan inilah yang membuat Ubuntu berbeda dari perangkat lunak berpemilik (proprietary); bukan hanya peralatan yang Anda butuhkan tersedia secara bebas biaya, tetapi Anda juga mempunyai hak untuk memodifikasi perangkat lunak Anda sampai perangkat lunak tersebut bekerja sesuai dengan yang Anda inginkan.
+
+	Nama Ubuntu diambil dari nama sebuah konsep ideologi di Afrika Selatan. “Ubuntu” berasal dari bahasa kuno Afrika, yang berarti “rasa perikemanusian terhadap sesama manusia”. Ubuntu juga bisa berarti “aku adalah aku karena keberadaan kita semua”. Tujuan dari distribusi Linux Ubuntu adalah membawa semangat yang terkandung di dalam Ubuntu ke dalam dunia perangkat lunak.
+    
+4. Brute Force Attack
+
+	Brute force attack adalah salah satu metode password cracking dengan cara mencoba semua kemungkinan kombinasi password yang disimpan didalam file wordlist. Kelemahan dalam meretas password menggunakan metode brute force ini memakan banyak waktu dan resource tergantung oleh panjang dan kombinasi karakter password yang akan diretas. Sebuah password dapat dibongkar dengan menggunakan program yang mencoba membuka password yang sudah terenkripsi dengan menggunakan algoritma tertentu dengan mencoba semua kemungkinan. Salah satu tools yang biasa digunakan dalam password cracking adalah medusa, hydra, ataupun ncrack. Dalam percobaan, akan dilakukan teknik brute force attack menggunakan tools medusa.
 
 
 #C. Instalasi
