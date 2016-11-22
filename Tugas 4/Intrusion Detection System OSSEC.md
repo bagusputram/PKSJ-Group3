@@ -431,3 +431,4 @@ Maka OSSEC akan mencatat ada penyerangan dan menambahkan list host yang tidak bi
 
 
 #E. Kesimpulan dan Saran
+IDS(Intrusion Detection System) bisa memberikan peringatan kepada server administrator jika ada kegiatan-kegiatan yang mencurigakan di dalam sistem kita. Hal ini membantu Administrator dalam mengawasi sistem kita agar tidak terjadi hal-hal yang tidak diinginkan. Supaya lebih optimal IDS bisa dikombinasikan dengan Honeypot.
