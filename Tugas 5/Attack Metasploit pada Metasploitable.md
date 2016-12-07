@@ -79,6 +79,25 @@ exit
 ```
 
 6. Install Metasploit Framework
+Download metasploit framework terlebih dahulu
+```
+cd /opt
+sudo git clone https://github.com/rapid7/metasploit-framework.git
+sudo chown -R `whoami` /opt/metasploit-framework
+cd metasploit-framework
+```
+Install menggunakan bundler dan gems yang dibutuhkan
+```
+gem install bundler
+bundle install
+```
+Setting supaya bisa diakses oleh semua user
+```
+sudo bash -c 'for MSF in $(ls msf*); do ln -s /opt/metasploit-framework/$MSF /usr/local/bin/$MSF;done'
+```
+
+
+7. Metasploit for Development and Contribution
 
 ###C.1.2 Installasi metasploit pada Kali Linux
 ####C.1.2.1 Installasi metasploit pada Kali Linux sebelum 2016 Rolling Edition
