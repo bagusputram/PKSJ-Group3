@@ -96,8 +96,42 @@ Setting supaya bisa diakses oleh semua user
 sudo bash -c 'for MSF in $(ls msf*); do ln -s /opt/metasploit-framework/$MSF /usr/local/bin/$MSF;done'
 ```
 
-
 7. Metasploit for Development and Contribution
+Apabila ingin berkontribusi ke dalam pengembangan metasploit lakukan langkah dibawah ini
+```
+curl -# -o /tmp/armitage.tgz http://www.fastandeasyhacking.com/download/armitage150813.tgz
+sudo tar -xvzf /tmp/armitage.tgz -C /opt
+sudo ln -s /opt/armitage/armitage /usr/local/bin/armitage
+sudo ln -s /opt/armitage/teamserver /usr/local/bin/teamserver
+sudo sh -c "echo java -jar /opt/armitage/armitage.jar \$\* > /opt/armitage/armitage"
+sudo perl -pi -e 's/armitage.jar/\/opt\/armitage\/armitage.jar/g' /opt/armitage/teamserver
+```
+Buatlah konfigurasi database
+```
+sudo nano /opt/metasploit-framework/config/database.yml
+```
+Dengan berisi
+```
+production:
+ adapter: postgresql
+ database: msf
+ username: msf
+ password: 
+ host: 127.0.0.1
+ port: 5432
+ pool: 75
+ timeout: 5
+```
+```
+sudo sh -c "echo export MSF_DATABASE_CONFIG=/opt/metasploit-framework/config/database.yml >> /etc/profile"
+source /etc/profile
+```
+
+8. Jalankan msfconsole
+Setelah selesai seluruh konfigurasi, terakhir adalah menjalankan console metasploit dengan command
+```
+msfconsole
+```
 
 ###C.1.2 Installasi metasploit pada Kali Linux
 ####C.1.2.1 Installasi metasploit pada Kali Linux sebelum 2016 Rolling Edition
