@@ -66,6 +66,28 @@ make clean
 
 5. 
 
+###C.1.2 Installasi metasploit pada Kali Linux
+####C.1.2.1 Installasi metasploit pada Kali Linux sebelum 2016 Rolling Edition
+Untuk menjalankan metasploit pada Kali Linux versi sebelum 2016.01 Rolling Edition diperlukan 3 hal yaitu
+1. Start Kali PostgreSQL Service
+```
+service postgresql start
+```
+2. Start Kali Metasploit Service
+```
+service metasploit start
+```
+
+3. Start msfconsole
+```
+msfconsole
+```
+Maka Hasilnya akan seperti dibawah ini
+
+####C.1.2.2 Instalasi Metasploit pada Kali Linux 2016.01 Rolling Edition
+Untuk menjalankan metasploit pada kali linux 2016.01 Rolling Edition tinggal menjalankan aplikassi msf framework maka akan langsung jalan aplikasi msf metasploit
+
+
 ## C.2 Installasi Metasploitable
 Untuk menjalankan metasploitable kita harus mendownloadnya terlebih dahulu di
 https://sourceforge.net/projects/metasploitable/files/Metasploitable2/
