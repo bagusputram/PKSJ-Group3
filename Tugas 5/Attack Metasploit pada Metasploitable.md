@@ -51,7 +51,32 @@ rbenv global $RUBYVERSION
 ruby -v
 ```
 
-4. 
+4. Install Nmap
+Installasi Nmap untuk melihat aplikasi serta versi dari port yang terbuka sehingga bisa dilakukan exploit
+```
+mkdir ~/Development
+cd ~/Development
+git clone https://github.com/nmap/nmap.git
+cd nmap 
+./configure
+make
+sudo make install
+make clean
+```
+
+5. 
+
+## C.2 Installasi Metasploitable
+Untuk menjalankan metasploitable kita harus mendownloadnya terlebih dahulu di
+https://sourceforge.net/projects/metasploitable/files/Metasploitable2/
+
+Setelah selesai di unzip buka VMWare Workstation dan Open Virtual Machine 
+
+Lalu arahkan kepada folder tenmpat penyimpanan metasploitable
+
+Jalankan Machine Virtualnya
+
+Untuk login gunakan username serta password msfadmin
 
 #D. Attack Exploit
 #E. Analasis Attack
