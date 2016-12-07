@@ -316,3 +316,4 @@ Melakukan pengecekan service yang terdapat pada host
 Cek uname -a dari host
 [![23.png](https://s30.postimg.org/t16rr7a0x/image.png)](https://postimg.org/image/maqahrmv1/)
 #E. Kesimpulan dan Saran
+Dengan menggunakan Kali Linux sangatlah mudah untuk mengeksploitasi sebuah sistem yang memiliki banyak celah untuk dilakukan penyerangan. Dikarenakan pada Kali Linux 2016.01 sudah terinstall aplikasi metasploit, sehingga tidak perlu lagi melakukan pengaturan dan penginstalan modul-modul yang diperlukan untuk menjalankan aplikasi metasploit. Dengan meggunakan exploit vsftpd_234_backdoor, fuser, serta clamav_milter_blackhole, metasploitable dapat dibuka sessionnya sehingga dapat dilakukan penyerangan dengan sangat mudah. Untuk menanggulangi hal-hal seperti diatas pengguna diharapkan selalu melakukan pembaharuan perangkat lunak sehingga celah-celah yang ada dapat dihindari.
