@@ -64,7 +64,21 @@ sudo make install
 make clean
 ```
 
-5. 
+5. Konfigurasi PostgreSQL
+Ganti menjadi user postgre agar dapat membuat database
+```
+sudo -s
+su postgres
+```
+Lalu buat databae
+```
+createuser msf -P -S -R -D
+createdb -O msf msf
+exit
+exit
+```
+
+6. Install Metasploit Framework
 
 ###C.1.2 Installasi metasploit pada Kali Linux
 ####C.1.2.1 Installasi metasploit pada Kali Linux sebelum 2016 Rolling Edition
