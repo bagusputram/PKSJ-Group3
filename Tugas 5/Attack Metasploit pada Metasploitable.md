@@ -1,4 +1,13 @@
 #A. Pendahuluan
+
+Metasploit merupakan sofware security yang sering digunakan untuk menguji coba ketahanan suatu sistem dengan cara mengeksploitasi kelemahan software suatu sistem. Metasploit diciptakan oleh HD Moore pada tahun 2003 sebagai sebuah alat jaringan portabel menggunakan bahasa scripting Perl. Kemudian, Metasploit Framework benar-benar ditulis ulang dalam bahasa pemrograman Ruby. Pada tanggal 21 Oktober 2009, Proyek Metasploit mengumumkan yang telah diakuisisi oleh Rapid7, sebuah perusahaan keamanan yang menyediakan solusi kerentanan manajemen terpadu.
+
+Seperti produk komersial yang sebanding seperti kanvas Imunitas atau Inti Dampak Core Security Technologies, Metasploit dapat digunakan untuk menguji kerentanan sistem komputer untuk melindungi mereka atau untuk masuk ke sistem remote. Seperti alat-alat keamanan banyak informasi, Metasploit dapat digunakan untuk kegiatan baik yang sah dan tidak sah. Sejak akuisisi dari Metasploit Framework.
+
+Metasploit biasanya digunakan untuk menyerang application layer dengan 0 day attack yang merupakan metode penyerangan pada software yang belum di patch. Metasploit biasa dikaitkan dengan istilah remote exploitation, maksudnya penyerang berada pada jarak jangkauan yang jauh dapat mengendalikan komputer korban. Metasploit menyerang dengan cara mengirimkan exploit pada komputer korban. Exploit ini berisi payload yang sudah ditentukan oleh penyerang. Exploit adalah software yang berfungsi untuk memanfaatkan kelemahan pada software korban(misal web browser), setelah berhasil mengeksploitasinya exploit tersebut memasukkan payload ke dalam memori korban.
+
+Payload merupakan sebuah executable milik penyerang yang akan di run pada komputer korban dengan tujuan dapat mengendalikan komputer tersebut secara remote atau memasang backdoor, trojan, virus, worm, dan lain-lain. Terlepas dari penggunaan metasploit yang disalah gunakan untuk kejahatan, software ini juga membantu System Security untuk memperkuat pertahanan jaringannya dari ulah penyerang dari luar.
+
 #B. Dasar Teori
 1. VMWare Workstation
    
